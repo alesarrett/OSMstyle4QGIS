@@ -3,29 +3,31 @@
   <renderer-v2 forceraster="0" enableorderby="0" type="RuleRenderer" symbollevels="1">
     <rules key="{e410ce93-a504-4e24-afab-50202e9a8ffc}">
       <rule checkstate="0" filter="ELSE" key="{c64c9f1a-4799-43ca-a285-e62ad7889836}" symbol="0"/>
-      <rule label="Protected Area" filter=" &quot;boundary&quot; = 'protected_area' " key="{3558801a-3ccb-4084-aafe-560f2dfa1f4d}" symbol="1"/>
-      <rule label="Building" filter="&quot;building&quot; &lt;> '' OR &quot;building&quot; = 'residential'" key="{a1018624-8f49-456c-98e6-f54b8565c032}" symbol="2"/>
-      <rule label="Church" filter=" &quot;amenity&quot; = 'place_of_worship' " key="{cc5974ac-4336-4545-980e-1af60ca73bc1}" symbol="3"/>
-      <rule label="Pitch" filter=" &quot;leisure&quot; = 'pitch' " key="{4e349f1a-442f-4ce0-9abe-c24a401edf6a}" symbol="4"/>
-      <rule label="Recreation ground" filter=" &quot;landuse&quot; = 'recreation_ground' " key="{d61fbc60-f03c-46ef-9a07-eaf851993a3f}" symbol="5"/>
-      <rule label="Tower" filter=" &quot;man_made&quot; = 'tower' " key="{d0b845de-414a-43cc-9d8c-7a640c6550e6}" symbol="6"/>
-      <rule label="Playground" filter=" &quot;leisure&quot; = 'playground' " key="{a5708192-45fb-40ed-9ee9-cd4735fb98db}" symbol="7"/>
-      <rule label="Parking" filter=" &quot;amenity&quot; = 'parking' " key="{abe25d65-8c7c-4726-bf15-4bfb135cc420}" symbol="8"/>
-      <rule label="School area" filter="&quot;amenity&quot;= 'school' OR &quot;amenity&quot;='kindergarten'" key="{b86c1de8-e039-478c-a527-d4d4908c49c3}" symbol="9"/>
-      <rule label="Park" filter="&quot;leisure&quot; = 'park'" key="{e95442be-447a-4b6b-ab09-3b04264ea902}" symbol="10"/>
-      <rule label="Farmland" filter="&quot;landuse&quot; = 'farmland'" key="{fc007513-3d07-41f0-a16f-c2f2d389e64a}" symbol="11"/>
-      <rule label="Forest" filter=" &quot;landuse&quot; = 'forest' " key="{a2bbc82f-be52-4255-88bf-babda5700e03}" symbol="12"/>
-      <rule label="Grass" filter="&quot;landuse&quot; = 'grass'" key="{cf750397-4715-4eee-b189-1da693516221}" symbol="13"/>
-      <rule label="Meadow" filter="&quot;landuse&quot; = 'meadow'" key="{5fd97a98-9bd0-422c-91ab-187637884fa1}" symbol="14"/>
-      <rule label="Village Green" filter=" &quot;landuse&quot; = 'village_green'" key="{948bffdc-4057-4593-a431-f85a878931b6}" symbol="15"/>
-      <rule label="Wetland - Marsh" filter=" &quot;natural&quot; = 'wetland' AND &quot;wetland&quot; = 'marsh' " key="{6c0c75da-8b36-4b2d-86ec-b57e376d6119}" symbol="16"/>
-      <rule label="Wetland - Reedbed" filter=" &quot;natural&quot; = 'wetland' AND &quot;wetland&quot; =  'reedbed' " key="{26270295-63a7-41ba-8e67-6a1b75b8f3a6}" symbol="17"/>
-      <rule label="Wood" filter=" &quot;natural&quot; = 'wood' " key="{c9e83ee9-3316-4747-ad50-21d7b6ec4250}" symbol="18"/>
-      <rule label="Water" filter="&quot;natural&quot; = 'water' OR &quot;leisure&quot; = 'swimming_pool' OR &quot;landuse&quot; = 'basin'" key="{eae16ced-cb11-4e21-bb90-e6019ff4cbd5}" symbol="19"/>
+      <rule label="Building" filter="&quot;building&quot; &lt;> '' OR &quot;building&quot; = 'residential'" key="{a1018624-8f49-456c-98e6-f54b8565c032}" symbol="1"/>
+      <rule label="Church" filter=" &quot;amenity&quot; = 'place_of_worship' " key="{cc5974ac-4336-4545-980e-1af60ca73bc1}" symbol="2"/>
+      <rule label="Pitch" filter=" &quot;leisure&quot; = 'pitch' " key="{4e349f1a-442f-4ce0-9abe-c24a401edf6a}" symbol="3"/>
+      <rule label="Recreation ground" filter=" &quot;landuse&quot; = 'recreation_ground' " key="{d61fbc60-f03c-46ef-9a07-eaf851993a3f}" symbol="4"/>
+      <rule label="Tower" filter=" &quot;man_made&quot; = 'tower' " key="{d0b845de-414a-43cc-9d8c-7a640c6550e6}" symbol="5"/>
+      <rule label="Playground" filter=" &quot;leisure&quot; = 'playground' " key="{a5708192-45fb-40ed-9ee9-cd4735fb98db}" symbol="6"/>
+      <rule label="Parking" filter=" &quot;amenity&quot; = 'parking' " key="{abe25d65-8c7c-4726-bf15-4bfb135cc420}" symbol="7"/>
+      <rule label="School area" filter="&quot;amenity&quot;= 'school' OR &quot;amenity&quot;='kindergarten'" key="{b86c1de8-e039-478c-a527-d4d4908c49c3}" symbol="8"/>
+      <rule label="Park" filter="&quot;leisure&quot; = 'park'" key="{e95442be-447a-4b6b-ab09-3b04264ea902}" symbol="9"/>
+      <rule label="Farmland" filter="&quot;landuse&quot; = 'farmland'" key="{fc007513-3d07-41f0-a16f-c2f2d389e64a}" symbol="10"/>
+      <rule label="Forest" filter=" &quot;landuse&quot; = 'forest' OR natural=wood" key="{a2bbc82f-be52-4255-88bf-babda5700e03}" symbol="11"/>
+      <rule label="Grass" filter="&quot;landuse&quot; = 'grass'" key="{cf750397-4715-4eee-b189-1da693516221}" symbol="12"/>
+      <rule label="Meadow" filter="&quot;landuse&quot; = 'meadow'" key="{5fd97a98-9bd0-422c-91ab-187637884fa1}" symbol="13"/>
+      <rule label="Village Green" filter=" &quot;landuse&quot; = 'village_green'" key="{948bffdc-4057-4593-a431-f85a878931b6}" symbol="14"/>
+      <rule label="Wetland - Marsh" filter=" &quot;natural&quot; = 'wetland' AND &quot;wetland&quot; = 'marsh' " key="{6c0c75da-8b36-4b2d-86ec-b57e376d6119}" symbol="15"/>
+      <rule label="Wetland - Reedbed" filter=" &quot;natural&quot; = 'wetland' AND &quot;wetland&quot; =  'reedbed' " key="{26270295-63a7-41ba-8e67-6a1b75b8f3a6}" symbol="16"/>
+      <rule label="Wood" filter=" &quot;natural&quot; = 'wood' " key="{c9e83ee9-3316-4747-ad50-21d7b6ec4250}" symbol="17"/>
+      <rule label="Water" filter="&quot;natural&quot; = 'water' OR &quot;leisure&quot; = 'swimming_pool' OR &quot;landuse&quot; = 'basin'" key="{eae16ced-cb11-4e21-bb90-e6019ff4cbd5}" symbol="18"/>
+      <rule label="Protected Area" filter=" &quot;boundary&quot; = 'protected_area' " key="{30dcc785-534e-429c-b011-ee01875cd794}" symbol="19"/>
       <rule label="Garden" filter=" &quot;leisure&quot; = 'garden'" key="{9f314429-8185-453b-b31e-af405a77b9f7}" symbol="20"/>
       <rule label="Water body intermittent - Water body seasonal - Infiltration basin - Detention basin" filter="(&quot;natural&quot; = 'water' OR &quot;intermittent&quot; &lt;> '') AND (&quot;natural&quot; = 'water' OR &quot;seasonal&quot; &lt;> '') AND (&quot;landuse&quot; = 'basin' OR &quot;basin&quot; ='infiltration') AND (&quot;landuse&quot; = 'basin' OR &quot;basin&quot; = 'detention')" key="{b6a25cbb-75c9-4818-a4a5-7b11030be3f2}" symbol="21"/>
       <rule label="Resturant" filter="&quot;amenity&quot; = 'restaurant' " key="{5e653d63-aa48-475f-919a-512e2858d952}" symbol="22"/>
       <rule label="Attraction" filter=" &quot;tourism&quot; = 'attraction' " key="{f83a9e29-fe8a-4fff-be5a-44da76ae586d}" symbol="23"/>
+      <rule label="Broadleaved woodland" filter="(&quot;landuse&quot; = 'wood' AND &quot;leaf_type&quot; = 'broadleaved') OR (&quot;landuse&quot; = 'forest' AND &quot;leaf_type&quot; = 'broadleaved')" key="{012364bc-b119-44d0-b6a6-ab9a826f06ef}" symbol="24"/>
+      <rule label="Needleleaved woodland" filter="(&quot;landuse&quot; = 'wood' AND &quot;leaf_type&quot; = 'needleleaved') OR (&quot;landuse&quot; = 'forest' AND &quot;leaf_type&quot; = 'needleleaved')" key="{9f3662dc-58b9-4c6c-9957-96ff5e6c9e6d}" symbol="25"/>
     </rules>
     <symbols>
       <symbol clip_to_extent="1" type="fill" name="0" alpha="1">
@@ -51,38 +53,16 @@
         </layer>
       </symbol>
       <symbol clip_to_extent="1" type="fill" name="1" alpha="1">
-        <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+        <layer enabled="1" class="SimpleFill" pass="1" locked="0">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="230,233,222,255"/>
+          <prop k="color" v="217,208,201,255"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="175,207,169,123"/>
+          <prop k="outline_color" v="194,181,170,255"/>
           <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="1.5"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="no"/>
-          <data_defined_properties>
-            <Option type="Map">
-              <Option value="" type="QString" name="name"/>
-              <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
-            </Option>
-          </data_defined_properties>
-        </layer>
-      </symbol>
-      <symbol clip_to_extent="1" type="fill" name="10" alpha="1">
-        <layer enabled="1" class="SimpleFill" pass="0" locked="0">
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="197,246,201,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="35,35,35,255"/>
-          <prop k="outline_style" v="no"/>
-          <prop k="outline_width" v="0.26"/>
+          <prop k="outline_width" v="0.3"/>
           <prop k="outline_width_unit" v="MM"/>
           <prop k="style" v="solid"/>
           <data_defined_properties>
@@ -94,7 +74,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" type="fill" name="11" alpha="1">
+      <symbol clip_to_extent="1" type="fill" name="10" alpha="1">
         <layer enabled="1" class="SimpleFill" pass="0" locked="0">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="color" v="238,240,213,255"/>
@@ -116,7 +96,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" type="fill" name="12" alpha="1">
+      <symbol clip_to_extent="1" type="fill" name="11" alpha="1">
         <layer enabled="1" class="RasterFill" pass="0" locked="0">
           <prop k="alpha" v="1"/>
           <prop k="angle" v="0"/>
@@ -128,6 +108,28 @@
           <prop k="width" v="0"/>
           <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="width_unit" v="Pixel"/>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" type="QString" name="name"/>
+              <Option name="properties"/>
+              <Option value="collection" type="QString" name="type"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+      <symbol clip_to_extent="1" type="fill" name="12" alpha="1">
+        <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="color" v="205,235,176,255"/>
+          <prop k="joinstyle" v="bevel"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="35,35,35,0"/>
+          <prop k="outline_style" v="solid"/>
+          <prop k="outline_width" v="0.26"/>
+          <prop k="outline_width_unit" v="MM"/>
+          <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
               <Option value="" type="QString" name="name"/>
@@ -182,28 +184,6 @@
         </layer>
       </symbol>
       <symbol clip_to_extent="1" type="fill" name="15" alpha="1">
-        <layer enabled="1" class="SimpleFill" pass="0" locked="0">
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="205,235,176,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="35,35,35,0"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0.26"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="solid"/>
-          <data_defined_properties>
-            <Option type="Map">
-              <Option value="" type="QString" name="name"/>
-              <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
-            </Option>
-          </data_defined_properties>
-        </layer>
-      </symbol>
-      <symbol clip_to_extent="1" type="fill" name="16" alpha="1">
         <layer enabled="1" class="RasterFill" pass="0" locked="0">
           <prop k="alpha" v="1"/>
           <prop k="angle" v="0"/>
@@ -224,7 +204,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" type="fill" name="17" alpha="1">
+      <symbol clip_to_extent="1" type="fill" name="16" alpha="1">
         <layer enabled="1" class="RasterFill" pass="0" locked="0">
           <prop k="alpha" v="1"/>
           <prop k="angle" v="0"/>
@@ -245,7 +225,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" type="fill" name="18" alpha="1">
+      <symbol clip_to_extent="1" type="fill" name="17" alpha="1">
         <layer enabled="1" class="RasterFill" pass="0" locked="0">
           <prop k="alpha" v="1"/>
           <prop k="angle" v="0"/>
@@ -266,7 +246,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" type="fill" name="19" alpha="1">
+      <symbol clip_to_extent="1" type="fill" name="18" alpha="1">
         <layer enabled="1" class="SimpleFill" pass="0" locked="0">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="color" v="170,211,223,255"/>
@@ -288,17 +268,39 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" type="fill" name="2" alpha="1">
-        <layer enabled="1" class="SimpleFill" pass="1" locked="0">
+      <symbol clip_to_extent="1" type="fill" name="19" alpha="1">
+        <layer enabled="1" class="SimpleFill" pass="0" locked="0">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="217,208,201,255"/>
+          <prop k="color" v="230,233,222,255"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="194,181,170,255"/>
+          <prop k="outline_color" v="175,207,169,122"/>
           <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0.3"/>
+          <prop k="outline_width" v="1.5"/>
+          <prop k="outline_width_unit" v="MM"/>
+          <prop k="style" v="no"/>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" type="QString" name="name"/>
+              <Option name="properties"/>
+              <Option value="collection" type="QString" name="type"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+      <symbol clip_to_extent="1" type="fill" name="2" alpha="1">
+        <layer enabled="1" class="SimpleFill" pass="2" locked="0">
+          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="color" v="150,150,150,255"/>
+          <prop k="joinstyle" v="bevel"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="35,35,35,255"/>
+          <prop k="outline_style" v="solid"/>
+          <prop k="outline_width" v="0.15"/>
           <prop k="outline_width_unit" v="MM"/>
           <prop k="style" v="solid"/>
           <data_defined_properties>
@@ -308,6 +310,45 @@
               <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
+        </layer>
+        <layer enabled="1" class="CentroidFill" pass="2" locked="0">
+          <prop k="point_on_all_parts" v="1"/>
+          <prop k="point_on_surface" v="0"/>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" type="QString" name="name"/>
+              <Option name="properties"/>
+              <Option value="collection" type="QString" name="type"/>
+            </Option>
+          </data_defined_properties>
+          <symbol clip_to_extent="1" type="marker" name="@2@1" alpha="1">
+            <layer enabled="1" class="SvgMarker" pass="0" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="0,0,0,255"/>
+              <prop k="fixedAspectRatio" v="0"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="landmark/religion=christian.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="5"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
         </layer>
       </symbol>
       <symbol clip_to_extent="1" type="fill" name="20" alpha="1">
@@ -455,19 +496,18 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" type="fill" name="3" alpha="1">
-        <layer enabled="1" class="SimpleFill" pass="2" locked="0">
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="150,150,150,255"/>
-          <prop k="joinstyle" v="bevel"/>
+      <symbol clip_to_extent="1" type="fill" name="24" alpha="1">
+        <layer enabled="1" class="RasterFill" pass="0" locked="0">
+          <prop k="alpha" v="1"/>
+          <prop k="angle" v="0"/>
+          <prop k="coordinate_mode" v="0"/>
+          <prop k="imageFile" v="/Users/alessandrooggioni/Qsync/Documents/Alessandro/OSM/OSMstyle4QGIS/png/Leaftype_broadleaved.png"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="35,35,35,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0.15"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="solid"/>
+          <prop k="width" v="0"/>
+          <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="width_unit" v="Pixel"/>
           <data_defined_properties>
             <Option type="Map">
               <Option value="" type="QString" name="name"/>
@@ -475,48 +515,30 @@
               <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
-        </layer>
-        <layer enabled="1" class="CentroidFill" pass="2" locked="0">
-          <prop k="point_on_all_parts" v="1"/>
-          <prop k="point_on_surface" v="0"/>
-          <data_defined_properties>
-            <Option type="Map">
-              <Option value="" type="QString" name="name"/>
-              <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
-            </Option>
-          </data_defined_properties>
-          <symbol clip_to_extent="1" type="marker" name="@3@1" alpha="1">
-            <layer enabled="1" class="SvgMarker" pass="0" locked="0">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="0,0,0,255"/>
-              <prop k="fixedAspectRatio" v="0"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="landmark/religion=christian.svg"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="5"/>
-              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
-              <data_defined_properties>
-                <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
-                  <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
-                </Option>
-              </data_defined_properties>
-            </layer>
-          </symbol>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" type="fill" name="4" alpha="1">
+      <symbol clip_to_extent="1" type="fill" name="25" alpha="1">
+        <layer enabled="1" class="RasterFill" pass="0" locked="0">
+          <prop k="alpha" v="1"/>
+          <prop k="angle" v="0"/>
+          <prop k="coordinate_mode" v="0"/>
+          <prop k="imageFile" v="/Users/alessandrooggioni/Qsync/Documents/Alessandro/OSM/OSMstyle4QGIS/png/Leaftype_broadleaved.png"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="width" v="0"/>
+          <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="width_unit" v="Pixel"/>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" type="QString" name="name"/>
+              <Option name="properties"/>
+              <Option value="collection" type="QString" name="type"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+      <symbol clip_to_extent="1" type="fill" name="3" alpha="1">
         <layer enabled="1" class="SimpleFill" pass="0" locked="0">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="color" v="170,224,203,255"/>
@@ -547,7 +569,7 @@
               <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
-          <symbol clip_to_extent="1" type="marker" name="@4@1" alpha="1">
+          <symbol clip_to_extent="1" type="marker" name="@3@1" alpha="1">
             <layer enabled="1" class="SvgMarker" pass="0" locked="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="255,0,0,255"/>
@@ -577,7 +599,7 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" type="fill" name="5" alpha="1">
+      <symbol clip_to_extent="1" type="fill" name="4" alpha="1">
         <layer enabled="1" class="SimpleFill" pass="0" locked="0">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="color" v="223,252,226,255"/>
@@ -599,7 +621,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" type="fill" name="6" alpha="1">
+      <symbol clip_to_extent="1" type="fill" name="5" alpha="1">
         <layer enabled="1" class="SimpleFill" pass="0" locked="0">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="color" v="150,150,150,255"/>
@@ -630,7 +652,7 @@
               <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
-          <symbol clip_to_extent="1" type="marker" name="@6@1" alpha="1">
+          <symbol clip_to_extent="1" type="marker" name="@5@1" alpha="1">
             <layer enabled="1" class="SvgMarker" pass="0" locked="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="150,150,150,255"/>
@@ -660,7 +682,7 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" type="fill" name="7" alpha="1">
+      <symbol clip_to_extent="1" type="fill" name="6" alpha="1">
         <layer enabled="1" class="SimpleFill" pass="0" locked="0">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="color" v="223,252,226,255"/>
@@ -691,7 +713,7 @@
               <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
-          <symbol clip_to_extent="1" type="marker" name="@7@1" alpha="1">
+          <symbol clip_to_extent="1" type="marker" name="@6@1" alpha="1">
             <layer enabled="1" class="SvgMarker" pass="0" locked="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="12,132,22,255"/>
@@ -721,7 +743,7 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" type="fill" name="8" alpha="1">
+      <symbol clip_to_extent="1" type="fill" name="7" alpha="1">
         <layer enabled="1" class="SimpleFill" pass="0" locked="0">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="color" v="237,237,237,255"/>
@@ -752,7 +774,7 @@
               <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
-          <symbol clip_to_extent="1" type="marker" name="@8@1" alpha="1">
+          <symbol clip_to_extent="1" type="marker" name="@7@1" alpha="1">
             <layer enabled="1" class="SvgMarker" pass="0" locked="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="255,0,0,255"/>
@@ -782,10 +804,32 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" type="fill" name="9" alpha="1">
+      <symbol clip_to_extent="1" type="fill" name="8" alpha="1">
         <layer enabled="1" class="SimpleFill" pass="0" locked="0">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="color" v="255,255,229,255"/>
+          <prop k="joinstyle" v="bevel"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="35,35,35,255"/>
+          <prop k="outline_style" v="no"/>
+          <prop k="outline_width" v="0.26"/>
+          <prop k="outline_width_unit" v="MM"/>
+          <prop k="style" v="solid"/>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" type="QString" name="name"/>
+              <Option name="properties"/>
+              <Option value="collection" type="QString" name="type"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+      <symbol clip_to_extent="1" type="fill" name="9" alpha="1">
+        <layer enabled="1" class="SimpleFill" pass="0" locked="0">
+          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="color" v="197,246,201,255"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -1275,9 +1319,9 @@
       <column hidden="0" type="field" name="parking" width="-1"/>
       <column hidden="0" type="field" name="landuse" width="-1"/>
       <column hidden="0" type="field" name="natural" width="-1"/>
-      <column hidden="0" type="field" name="leisure" width="-1"/>
+      <column hidden="0" type="field" name="leisure" width="185"/>
       <column hidden="0" type="field" name="addr:housenumber" width="-1"/>
-      <column hidden="0" type="field" name="start_date" width="-1"/>
+      <column hidden="0" type="field" name="start_date" width="100"/>
       <column hidden="0" type="field" name="wikipedia" width="-1"/>
       <column hidden="0" type="field" name="tourism" width="-1"/>
       <column hidden="0" type="field" name="wikidata" width="-1"/>
