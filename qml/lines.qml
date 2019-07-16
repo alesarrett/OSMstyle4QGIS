@@ -1,27 +1,27 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis simplifyAlgorithm="0" simplifyMaxScale="1" simplifyDrawingTol="1" version="3.2.3-Bonn" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" minScale="1e+8" readOnly="0" simplifyDrawingHints="1" maxScale="0" simplifyLocal="1">
-  <renderer-v2 forceraster="0" symbollevels="1" type="RuleRenderer" enableorderby="0">
+<qgis labelsEnabled="1" minScale="1e+8" simplifyDrawingTol="1" version="3.2.3-Bonn" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1" maxScale="0" simplifyDrawingHints="1" readOnly="0" simplifyLocal="1" simplifyAlgorithm="0">
+  <renderer-v2 forceraster="0" enableorderby="0" symbollevels="1" type="RuleRenderer">
     <rules key="{eea85db9-2be6-49ce-9b29-437162ea8768}">
-      <rule symbol="0" label="cycleway/path" key="{b87ee4e3-128c-4e82-b29e-27d32717599b}" filter="&quot;highway&quot; = 'cycleway'"/>
-      <rule symbol="1" label="footway" key="{ac851e9f-0d37-45ee-a95c-9c14de201371}" filter="&quot;highway&quot; = 'footway' OR &quot;highway&quot; = 'path'"/>
-      <rule symbol="2" label="Roads" key="{333a7af0-0b3c-4d16-ad9b-929ac42571a7}" filter="&quot;highway&quot; = 'residential' OR&#xa;&quot;highway&quot; = 'service'  OR&#xa;&quot;highway&quot; = 'tertiary' OR&#xa;&quot;highway&quot; = 'unclassified'" scalemaxdenom="5000" scalemindenom="1"/>
-      <rule symbol="3" label="Roads" key="{2c5934c8-a50e-4227-94a6-fa56384b6740}" filter="&quot;highway&quot; = 'residential' OR&#xa;&quot;highway&quot; = 'service'  OR&#xa;&quot;highway&quot; = 'tertiary' OR&#xa;&quot;highway&quot; = 'unclassified'" scalemaxdenom="25000" scalemindenom="5000"/>
-      <rule symbol="4" label="Secondary road" key="{64b4384d-8cb0-4efd-93de-4c48d48c4670}" filter="&quot;highway&quot; = 'secondary'" scalemaxdenom="5000" scalemindenom="1"/>
-      <rule symbol="5" label="Secondary road" key="{1192a7eb-716a-4e92-acdf-c13972f717b7}" filter="&quot;highway&quot; = 'secondary'" scalemaxdenom="25000" scalemindenom="5000"/>
-      <rule symbol="6" key="{84282b47-987e-4659-8f53-1b9f4cde0930}" filter="ELSE"/>
-      <rule symbol="7" label="Fence" key="{819d9305-a289-4e99-9457-920e0233dd8f}" filter=" &quot;barrier&quot;  =  'fence' "/>
-      <rule symbol="8" label="stream" key="{72211424-31f1-40a2-adfe-57ed51866941}" filter="&quot;waterway&quot; = 'stream' OR &quot;waterway&quot; = 'ditch' OR &quot;waterway&quot; = 'drain'"/>
-      <rule symbol="9" label="Track with unknown surface type" key="{95575256-593c-4648-8040-0f8dc1b5ea1f}" filter=" &quot;highway&quot;  =  'track' AND  &quot;tracktype&quot;  = ''"/>
-      <rule symbol="10" label="Track. Mostly soft surface" key="{40adfc1b-2354-4a00-aeed-3411fafa57a8}" filter=" &quot;highway&quot;  =  'track' AND  &quot;tracktype&quot;  =  'grade4' "/>
-      <rule symbol="11" label="Sub-national boundary (fifth-highest or sixth-highest level)" key="{baa3c8e0-2142-4e4c-9508-84e9e3fde6dd}" filter="(&quot;boundary&quot;  =  'administrative' AND  &quot;admin_level&quot;  =  '8') OR (&quot;boundary&quot;  =  'administrative' AND  &quot;admin_level&quot;  =  '7')"/>
-      <rule symbol="12" label="Line of trees" key="{8c1e2826-afbc-4b2a-9e9a-0726224c971d}" filter=" &quot;natural&quot;  =  'tree_row' "/>
-      <rule symbol="13" label="Hedge" key="{c79882d0-f52b-4270-871f-84fcffe6e600}" filter=" &quot;barrier&quot;  =  'hedge' "/>
-      <rule symbol="14" label="Barrier Gate (TODO!!!)" key="{20d5158d-0a1c-4219-b2da-814b608d82e1}" filter=" &quot;barrier&quot;  =  'gate' "/>
-      <rule symbol="15" label="Wall / Fence / Chain / Guard rail / Hand rail / Ditch / Kerb" key="{b1069bca-acec-496d-9605-6e34e67a0bde}" filter=" &quot;barrier&quot;  =  'fence' OR &quot;barrier&quot;  =  'retaining_wall' OR &quot;barrier&quot;  =  'wall' OR &quot;barrier&quot;  =  'chain' OR &quot;barrier&quot;  =  'guard_rail' OR &quot;barrier&quot;  =  'handrail' OR &quot;barrier&quot;  =  'ditch' OR &quot;barrier&quot;  =  'kerb'"/>
+      <rule label="cycleway/path" key="{b87ee4e3-128c-4e82-b29e-27d32717599b}" filter="&quot;highway&quot; = 'cycleway'" symbol="0"/>
+      <rule label="footway" key="{ac851e9f-0d37-45ee-a95c-9c14de201371}" filter="&quot;highway&quot; = 'footway' OR &quot;highway&quot; = 'path'" symbol="1"/>
+      <rule label="Roads" key="{333a7af0-0b3c-4d16-ad9b-929ac42571a7}" filter="&quot;highway&quot; = 'residential' OR&#xa;&quot;highway&quot; = 'service'  OR&#xa;&quot;highway&quot; = 'tertiary' OR&#xa;&quot;highway&quot; = 'unclassified'" scalemindenom="1" scalemaxdenom="5000" symbol="2"/>
+      <rule label="Roads" key="{2c5934c8-a50e-4227-94a6-fa56384b6740}" filter="&quot;highway&quot; = 'residential' OR&#xa;&quot;highway&quot; = 'service'  OR&#xa;&quot;highway&quot; = 'tertiary' OR&#xa;&quot;highway&quot; = 'unclassified'" scalemindenom="5000" scalemaxdenom="25000" symbol="3"/>
+      <rule label="Secondary road" key="{64b4384d-8cb0-4efd-93de-4c48d48c4670}" filter="&quot;highway&quot; = 'secondary'" scalemindenom="1" scalemaxdenom="5000" symbol="4"/>
+      <rule label="Secondary road" key="{1192a7eb-716a-4e92-acdf-c13972f717b7}" filter="&quot;highway&quot; = 'secondary'" scalemindenom="5000" scalemaxdenom="25000" symbol="5"/>
+      <rule key="{84282b47-987e-4659-8f53-1b9f4cde0930}" filter="ELSE" symbol="6"/>
+      <rule label="Fence" key="{819d9305-a289-4e99-9457-920e0233dd8f}" filter=" &quot;barrier&quot;  =  'fence' " symbol="7"/>
+      <rule label="stream" key="{72211424-31f1-40a2-adfe-57ed51866941}" filter="&quot;waterway&quot; = 'stream' OR &quot;waterway&quot; = 'ditch' OR &quot;waterway&quot; = 'drain'" symbol="8"/>
+      <rule label="Track with unknown surface type" key="{95575256-593c-4648-8040-0f8dc1b5ea1f}" filter=" &quot;highway&quot;  =  'track' AND  &quot;tracktype&quot;  = ''" symbol="9"/>
+      <rule label="Track. Mostly soft surface" key="{40adfc1b-2354-4a00-aeed-3411fafa57a8}" filter=" &quot;highway&quot;  =  'track' AND  &quot;tracktype&quot;  =  'grade4' " symbol="10"/>
+      <rule label="Sub-national boundary (fifth-highest or sixth-highest level)" key="{baa3c8e0-2142-4e4c-9508-84e9e3fde6dd}" filter="(&quot;boundary&quot;  =  'administrative' AND  &quot;admin_level&quot;  =  '8') OR (&quot;boundary&quot;  =  'administrative' AND  &quot;admin_level&quot;  =  '7')" symbol="11"/>
+      <rule label="Line of trees" key="{8c1e2826-afbc-4b2a-9e9a-0726224c971d}" filter=" &quot;natural&quot;  =  'tree_row' " symbol="12"/>
+      <rule label="Hedge" key="{c79882d0-f52b-4270-871f-84fcffe6e600}" filter=" &quot;barrier&quot;  =  'hedge' " symbol="13"/>
+      <rule label="Barrier Gate (TODO!!!)" key="{20d5158d-0a1c-4219-b2da-814b608d82e1}" filter=" &quot;barrier&quot;  =  'gate' " symbol="14"/>
+      <rule label="Wall / Fence / Chain / Guard rail / Hand rail / Ditch / Kerb" key="{b1069bca-acec-496d-9605-6e34e67a0bde}" filter=" &quot;barrier&quot;  =  'fence' OR &quot;barrier&quot;  =  'retaining_wall' OR &quot;barrier&quot;  =  'wall' OR &quot;barrier&quot;  =  'chain' OR &quot;barrier&quot;  =  'guard_rail' OR &quot;barrier&quot;  =  'handrail' OR &quot;barrier&quot;  =  'ditch' OR &quot;barrier&quot;  =  'kerb'" symbol="15"/>
     </rules>
     <symbols>
-      <symbol name="0" clip_to_extent="1" alpha="1" type="line">
-        <layer pass="0" locked="0" class="SimpleLine" enabled="1">
+      <symbol clip_to_extent="1" alpha="1" name="0" type="line">
+        <layer enabled="1" pass="0" class="SimpleLine" locked="0">
           <prop v="square" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -39,15 +39,15 @@
           <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="1" clip_to_extent="1" alpha="1" type="line">
-        <layer pass="0" locked="0" class="SimpleLine" enabled="1">
+      <symbol clip_to_extent="1" alpha="1" name="1" type="line">
+        <layer enabled="1" pass="0" class="SimpleLine" locked="0">
           <prop v="square" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -65,15 +65,15 @@
           <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="10" clip_to_extent="1" alpha="1" type="line">
-        <layer pass="0" locked="0" class="SimpleLine" enabled="1">
+      <symbol clip_to_extent="1" alpha="1" name="10" type="line">
+        <layer enabled="1" pass="0" class="SimpleLine" locked="0">
           <prop v="square" k="capstyle"/>
           <prop v="3;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -91,15 +91,15 @@
           <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="11" clip_to_extent="1" alpha="1" type="line">
-        <layer pass="0" locked="0" class="SimpleLine" enabled="1">
+      <symbol clip_to_extent="1" alpha="1" name="11" type="line">
+        <layer enabled="1" pass="0" class="SimpleLine" locked="0">
           <prop v="square" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -117,15 +117,15 @@
           <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="12" clip_to_extent="1" alpha="1" type="line">
-        <layer pass="0" locked="0" class="SimpleLine" enabled="1">
+      <symbol clip_to_extent="1" alpha="1" name="12" type="line">
+        <layer enabled="1" pass="0" class="SimpleLine" locked="0">
           <prop v="square" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -143,15 +143,15 @@
           <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="13" clip_to_extent="1" alpha="1" type="line">
-        <layer pass="0" locked="0" class="SimpleLine" enabled="1">
+      <symbol clip_to_extent="1" alpha="1" name="13" type="line">
+        <layer enabled="1" pass="0" class="SimpleLine" locked="0">
           <prop v="square" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -169,15 +169,15 @@
           <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="14" clip_to_extent="1" alpha="1" type="line">
-        <layer pass="0" locked="0" class="SimpleLine" enabled="1">
+      <symbol clip_to_extent="1" alpha="1" name="14" type="line">
+        <layer enabled="1" pass="0" class="SimpleLine" locked="0">
           <prop v="square" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -195,15 +195,15 @@
           <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="15" clip_to_extent="1" alpha="1" type="line">
-        <layer pass="0" locked="0" class="SimpleLine" enabled="1">
+      <symbol clip_to_extent="1" alpha="1" name="15" type="line">
+        <layer enabled="1" pass="0" class="SimpleLine" locked="0">
           <prop v="square" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -221,26 +221,26 @@
           <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="2" clip_to_extent="1" alpha="1" type="line">
-        <layer pass="0" locked="0" class="GeometryGenerator" enabled="1">
+      <symbol clip_to_extent="1" alpha="1" name="2" type="line">
+        <layer enabled="1" pass="0" class="GeometryGenerator" locked="0">
           <prop v="Line" k="SymbolType"/>
           <prop v="$geometry" k="geometryModifier"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
-          <symbol name="@2@0" clip_to_extent="1" alpha="1" type="line">
-            <layer pass="0" locked="0" class="SimpleLine" enabled="1">
+          <symbol clip_to_extent="1" alpha="1" name="@2@0" type="line">
+            <layer enabled="1" pass="0" class="SimpleLine" locked="0">
               <prop v="round" k="capstyle"/>
               <prop v="5;2" k="customdash"/>
               <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -258,26 +258,26 @@
               <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
+                  <Option value="" name="name" type="QString"/>
                   <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option value="collection" name="type" type="QString"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </layer>
-        <layer pass="1" locked="0" class="GeometryGenerator" enabled="1">
+        <layer enabled="1" pass="1" class="GeometryGenerator" locked="0">
           <prop v="Line" k="SymbolType"/>
           <prop v="$geometry&#xa;" k="geometryModifier"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
-          <symbol name="@2@1" clip_to_extent="1" alpha="1" type="line">
-            <layer pass="0" locked="0" class="SimpleLine" enabled="1">
+          <symbol clip_to_extent="1" alpha="1" name="@2@1" type="line">
+            <layer enabled="1" pass="0" class="SimpleLine" locked="0">
               <prop v="round" k="capstyle"/>
               <prop v="5;2" k="customdash"/>
               <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -295,28 +295,28 @@
               <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
+                  <Option value="" name="name" type="QString"/>
                   <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option value="collection" name="type" type="QString"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </layer>
       </symbol>
-      <symbol name="3" clip_to_extent="1" alpha="1" type="line">
-        <layer pass="0" locked="0" class="GeometryGenerator" enabled="1">
+      <symbol clip_to_extent="1" alpha="1" name="3" type="line">
+        <layer enabled="1" pass="0" class="GeometryGenerator" locked="0">
           <prop v="Line" k="SymbolType"/>
           <prop v="$geometry" k="geometryModifier"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
-          <symbol name="@3@0" clip_to_extent="1" alpha="1" type="line">
-            <layer pass="0" locked="0" class="SimpleLine" enabled="1">
+          <symbol clip_to_extent="1" alpha="1" name="@3@0" type="line">
+            <layer enabled="1" pass="0" class="SimpleLine" locked="0">
               <prop v="round" k="capstyle"/>
               <prop v="5;2" k="customdash"/>
               <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -334,26 +334,26 @@
               <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
+                  <Option value="" name="name" type="QString"/>
                   <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option value="collection" name="type" type="QString"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </layer>
-        <layer pass="1" locked="0" class="GeometryGenerator" enabled="1">
+        <layer enabled="1" pass="1" class="GeometryGenerator" locked="0">
           <prop v="Line" k="SymbolType"/>
           <prop v="$geometry" k="geometryModifier"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
-          <symbol name="@3@1" clip_to_extent="1" alpha="1" type="line">
-            <layer pass="0" locked="0" class="SimpleLine" enabled="1">
+          <symbol clip_to_extent="1" alpha="1" name="@3@1" type="line">
+            <layer enabled="1" pass="0" class="SimpleLine" locked="0">
               <prop v="round" k="capstyle"/>
               <prop v="5;2" k="customdash"/>
               <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -371,28 +371,28 @@
               <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
+                  <Option value="" name="name" type="QString"/>
                   <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option value="collection" name="type" type="QString"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </layer>
       </symbol>
-      <symbol name="4" clip_to_extent="1" alpha="1" type="line">
-        <layer pass="0" locked="0" class="GeometryGenerator" enabled="1">
+      <symbol clip_to_extent="1" alpha="1" name="4" type="line">
+        <layer enabled="1" pass="0" class="GeometryGenerator" locked="0">
           <prop v="Line" k="SymbolType"/>
           <prop v="smooth(&#xa;$geometry,2&#xa;)" k="geometryModifier"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
-          <symbol name="@4@0" clip_to_extent="1" alpha="1" type="line">
-            <layer pass="0" locked="0" class="SimpleLine" enabled="1">
+          <symbol clip_to_extent="1" alpha="1" name="@4@0" type="line">
+            <layer enabled="1" pass="0" class="SimpleLine" locked="0">
               <prop v="round" k="capstyle"/>
               <prop v="5;2" k="customdash"/>
               <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -410,26 +410,26 @@
               <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
+                  <Option value="" name="name" type="QString"/>
                   <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option value="collection" name="type" type="QString"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </layer>
-        <layer pass="1" locked="0" class="GeometryGenerator" enabled="1">
+        <layer enabled="1" pass="1" class="GeometryGenerator" locked="0">
           <prop v="Line" k="SymbolType"/>
           <prop v="smooth(&#xa;$geometry,2&#xa;)" k="geometryModifier"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
-          <symbol name="@4@1" clip_to_extent="1" alpha="1" type="line">
-            <layer pass="0" locked="0" class="SimpleLine" enabled="1">
+          <symbol clip_to_extent="1" alpha="1" name="@4@1" type="line">
+            <layer enabled="1" pass="0" class="SimpleLine" locked="0">
               <prop v="round" k="capstyle"/>
               <prop v="5;2" k="customdash"/>
               <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -447,28 +447,28 @@
               <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
+                  <Option value="" name="name" type="QString"/>
                   <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option value="collection" name="type" type="QString"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </layer>
       </symbol>
-      <symbol name="5" clip_to_extent="1" alpha="1" type="line">
-        <layer pass="0" locked="0" class="GeometryGenerator" enabled="1">
+      <symbol clip_to_extent="1" alpha="1" name="5" type="line">
+        <layer enabled="1" pass="0" class="GeometryGenerator" locked="0">
           <prop v="Line" k="SymbolType"/>
           <prop v="smooth(&#xa;$geometry,2&#xa;)" k="geometryModifier"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
-          <symbol name="@5@0" clip_to_extent="1" alpha="1" type="line">
-            <layer pass="0" locked="0" class="SimpleLine" enabled="1">
+          <symbol clip_to_extent="1" alpha="1" name="@5@0" type="line">
+            <layer enabled="1" pass="0" class="SimpleLine" locked="0">
               <prop v="round" k="capstyle"/>
               <prop v="5;2" k="customdash"/>
               <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -486,26 +486,26 @@
               <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
+                  <Option value="" name="name" type="QString"/>
                   <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option value="collection" name="type" type="QString"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </layer>
-        <layer pass="1" locked="0" class="GeometryGenerator" enabled="1">
+        <layer enabled="1" pass="1" class="GeometryGenerator" locked="0">
           <prop v="Line" k="SymbolType"/>
           <prop v="smooth(&#xa;$geometry,2&#xa;)" k="geometryModifier"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
-          <symbol name="@5@1" clip_to_extent="1" alpha="1" type="line">
-            <layer pass="0" locked="0" class="SimpleLine" enabled="1">
+          <symbol clip_to_extent="1" alpha="1" name="@5@1" type="line">
+            <layer enabled="1" pass="0" class="SimpleLine" locked="0">
               <prop v="round" k="capstyle"/>
               <prop v="5;2" k="customdash"/>
               <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -523,17 +523,17 @@
               <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
+                  <Option value="" name="name" type="QString"/>
                   <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option value="collection" name="type" type="QString"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </layer>
       </symbol>
-      <symbol name="6" clip_to_extent="1" alpha="1" type="line">
-        <layer pass="0" locked="0" class="SimpleLine" enabled="1">
+      <symbol clip_to_extent="1" alpha="1" name="6" type="line">
+        <layer enabled="1" pass="0" class="SimpleLine" locked="0">
           <prop v="square" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -551,15 +551,15 @@
           <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="7" clip_to_extent="1" alpha="1" type="line">
-        <layer pass="0" locked="0" class="SimpleLine" enabled="1">
+      <symbol clip_to_extent="1" alpha="1" name="7" type="line">
+        <layer enabled="1" pass="0" class="SimpleLine" locked="0">
           <prop v="square" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -577,15 +577,15 @@
           <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="8" clip_to_extent="1" alpha="1" type="line">
-        <layer pass="0" locked="0" class="SimpleLine" enabled="1">
+      <symbol clip_to_extent="1" alpha="1" name="8" type="line">
+        <layer enabled="1" pass="0" class="SimpleLine" locked="0">
           <prop v="square" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -603,15 +603,15 @@
           <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol name="9" clip_to_extent="1" alpha="1" type="line">
-        <layer pass="0" locked="0" class="SimpleLine" enabled="1">
+      <symbol clip_to_extent="1" alpha="1" name="9" type="line">
+        <layer enabled="1" pass="0" class="SimpleLine" locked="0">
           <prop v="square" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -629,9 +629,9 @@
           <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
         </layer>
@@ -642,60 +642,60 @@
     <rules key="">
       <rule key="" filter="&quot;waterway&quot; = 'stream'" description="stream">
         <settings>
-          <text-style fontSizeUnit="Point" fontWordSpacing="0" fontCapitals="0" fontStrikeout="0" fontSize="8" isExpression="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" fontItalic="0" fieldName="name" fontUnderline="0" textColor="178,197,217,255" textOpacity="1" fontLetterSpacing="0" namedStyle="Bold" previewBkgrdColor="#ffffff" blendMode="0" multilineHeight="1" fontFamily=".SF NS Text" fontWeight="75">
-            <text-buffer bufferOpacity="1" bufferSizeUnits="MM" bufferJoinStyle="128" bufferDraw="1" bufferColor="255,255,255,255" bufferSize="0.5000000000000001" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferNoFill="1" bufferBlendMode="0"/>
-            <background shapeType="0" shapeOffsetY="0" shapeRotationType="0" shapeSizeX="0" shapeOffsetX="0" shapeBlendMode="0" shapeSizeY="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeBorderColor="128,128,128,255" shapeBorderWidth="0" shapeSVGFile="" shapeRadiiY="0" shapeOffsetUnit="MM" shapeOpacity="1" shapeBorderWidthUnit="MM" shapeDraw="0" shapeRotation="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeFillColor="255,255,255,255" shapeRadiiX="0" shapeSizeType="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeJoinStyle="64" shapeSizeUnit="MM"/>
-            <shadow shadowOffsetDist="1" shadowOffsetGlobal="1" shadowScale="100" shadowOffsetAngle="135" shadowBlendMode="6" shadowDraw="0" shadowOffsetUnit="MM" shadowRadius="1.5" shadowOpacity="0.7" shadowUnder="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusUnit="MM" shadowColor="0,0,0,255" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0"/>
+          <text-style fontSizeUnit="Point" fontItalic="0" fontWordSpacing="0" blendMode="0" fontCapitals="0" multilineHeight="1" fieldName="name" fontFamily=".SF NS Text" fontStrikeout="0" isExpression="0" fontLetterSpacing="0" fontWeight="75" namedStyle="Bold" textOpacity="1" fontUnderline="0" textColor="178,197,217,255" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" previewBkgrdColor="#ffffff" fontSize="8">
+            <text-buffer bufferOpacity="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSizeUnits="MM" bufferSize="0.5000000000000001" bufferNoFill="1" bufferJoinStyle="128" bufferBlendMode="0" bufferDraw="1" bufferColor="255,255,255,255"/>
+            <background shapeRadiiX="0" shapeRotation="0" shapeJoinStyle="64" shapeOpacity="1" shapeOffsetUnit="MM" shapeBorderWidth="0" shapeFillColor="255,255,255,255" shapeDraw="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeSVGFile="" shapeRotationType="0" shapeBlendMode="0" shapeSizeType="0" shapeSizeY="0" shapeOffsetY="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetX="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeSizeUnit="MM" shapeRadiiY="0" shapeType="0" shapeBorderWidthUnit="MM" shapeBorderColor="128,128,128,255" shapeSizeX="0"/>
+            <shadow shadowDraw="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOpacity="0.7" shadowBlendMode="6" shadowRadiusUnit="MM" shadowColor="0,0,0,255" shadowScale="100" shadowOffsetGlobal="1" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetDist="1" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetAngle="135" shadowRadius="1.5"/>
             <substitutions/>
           </text-style>
-          <text-format formatNumbers="0" leftDirectionSymbol="&lt;" reverseDirectionSymbol="0" placeDirectionSymbol="0" rightDirectionSymbol=">" addDirectionSymbol="0" wrapChar="" decimals="3" multilineAlign="4294967295" plussign="0"/>
-          <placement preserveRotation="1" maxCurvedCharAngleOut="-25" placementFlags="9" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" fitInPolygonOnly="0" quadOffset="4" placement="3" centroidInside="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" distUnits="MM" xOffset="0" offsetType="0" rotationAngle="0" centroidWhole="0" distMapUnitScale="3x:0,0,0,0,0,0" maxCurvedCharAngleIn="25" repeatDistance="0" priority="5" offsetUnits="MM" yOffset="0" dist="0" repeatDistanceUnits="MM" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0"/>
-          <rendering drawLabels="1" scaleMin="0" obstacleFactor="1" limitNumLabels="0" upsidedownLabels="0" obstacleType="0" zIndex="0" scaleVisibility="0" maxNumLabels="2000" fontMinPixelSize="3" fontMaxPixelSize="10000" scaleMax="0" displayAll="0" labelPerPart="0" mergeLines="0" fontLimitPixelSize="0" minFeatureSize="0" obstacle="1"/>
+          <text-format decimals="3" multilineAlign="4294967295" formatNumbers="0" leftDirectionSymbol="&lt;" placeDirectionSymbol="0" wrapChar="" addDirectionSymbol="0" plussign="0" rightDirectionSymbol=">" reverseDirectionSymbol="0"/>
+          <placement distMapUnitScale="3x:0,0,0,0,0,0" yOffset="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" dist="0" repeatDistanceUnits="MM" offsetType="0" fitInPolygonOnly="0" offsetUnits="MM" centroidInside="0" rotationAngle="0" centroidWhole="0" repeatDistance="0" xOffset="0" quadOffset="4" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" distUnits="MM" placement="3" placementFlags="9" maxCurvedCharAngleIn="25" preserveRotation="1" maxCurvedCharAngleOut="-25" priority="5" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0"/>
+          <rendering obstacleFactor="1" minFeatureSize="0" upsidedownLabels="0" obstacle="1" maxNumLabels="2000" scaleMax="0" drawLabels="1" scaleMin="0" limitNumLabels="0" fontMinPixelSize="3" fontMaxPixelSize="10000" obstacleType="0" mergeLines="0" scaleVisibility="0" labelPerPart="0" displayAll="0" fontLimitPixelSize="0" zIndex="0"/>
           <dd_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </dd_properties>
         </settings>
       </rule>
-      <rule key="" filter="&quot;highway&quot; = 'residential' OR&#xa;&quot;highway&quot; = 'service'  OR&#xa;&quot;highway&quot; = 'tertiary' OR&#xa;&quot;highway&quot; = 'unclassified'" scalemaxdenom="5000" description="roads" scalemindenom="1">
+      <rule key="" filter="&quot;highway&quot; = 'residential' OR&#xa;&quot;highway&quot; = 'service'  OR&#xa;&quot;highway&quot; = 'tertiary' OR&#xa;&quot;highway&quot; = 'unclassified'" scalemindenom="1" scalemaxdenom="5000" description="roads">
         <settings>
-          <text-style fontSizeUnit="Point" fontWordSpacing="0" fontCapitals="0" fontStrikeout="0" fontSize="10" isExpression="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" fontItalic="0" fieldName="name" fontUnderline="0" textColor="0,0,0,255" textOpacity="1" fontLetterSpacing="0" namedStyle="Regular" previewBkgrdColor="#ffffff" blendMode="0" multilineHeight="1" fontFamily=".SF NS Text" fontWeight="50">
-            <text-buffer bufferOpacity="1" bufferSizeUnits="MM" bufferJoinStyle="128" bufferDraw="0" bufferColor="255,255,255,255" bufferSize="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferNoFill="1" bufferBlendMode="0"/>
-            <background shapeType="0" shapeOffsetY="0" shapeRotationType="0" shapeSizeX="0" shapeOffsetX="0" shapeBlendMode="0" shapeSizeY="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeBorderColor="128,128,128,255" shapeBorderWidth="0" shapeSVGFile="" shapeRadiiY="0" shapeOffsetUnit="MM" shapeOpacity="1" shapeBorderWidthUnit="MM" shapeDraw="0" shapeRotation="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeFillColor="255,255,255,255" shapeRadiiX="0" shapeSizeType="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeJoinStyle="64" shapeSizeUnit="MM"/>
-            <shadow shadowOffsetDist="1" shadowOffsetGlobal="1" shadowScale="100" shadowOffsetAngle="135" shadowBlendMode="6" shadowDraw="0" shadowOffsetUnit="MM" shadowRadius="1.5" shadowOpacity="0.7" shadowUnder="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusUnit="MM" shadowColor="0,0,0,255" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0"/>
+          <text-style fontSizeUnit="Point" fontItalic="0" fontWordSpacing="0" blendMode="0" fontCapitals="0" multilineHeight="1" fieldName="name" fontFamily=".SF NS Text" fontStrikeout="0" isExpression="0" fontLetterSpacing="0" fontWeight="50" namedStyle="Regular" textOpacity="1" fontUnderline="0" textColor="0,0,0,255" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" previewBkgrdColor="#ffffff" fontSize="10">
+            <text-buffer bufferOpacity="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSizeUnits="MM" bufferSize="1" bufferNoFill="1" bufferJoinStyle="128" bufferBlendMode="0" bufferDraw="0" bufferColor="255,255,255,255"/>
+            <background shapeRadiiX="0" shapeRotation="0" shapeJoinStyle="64" shapeOpacity="1" shapeOffsetUnit="MM" shapeBorderWidth="0" shapeFillColor="255,255,255,255" shapeDraw="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeSVGFile="" shapeRotationType="0" shapeBlendMode="0" shapeSizeType="0" shapeSizeY="0" shapeOffsetY="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetX="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeSizeUnit="MM" shapeRadiiY="0" shapeType="0" shapeBorderWidthUnit="MM" shapeBorderColor="128,128,128,255" shapeSizeX="0"/>
+            <shadow shadowDraw="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOpacity="0.7" shadowBlendMode="6" shadowRadiusUnit="MM" shadowColor="0,0,0,255" shadowScale="100" shadowOffsetGlobal="1" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetDist="1" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetAngle="135" shadowRadius="1.5"/>
             <substitutions/>
           </text-style>
-          <text-format formatNumbers="0" leftDirectionSymbol="&lt;" reverseDirectionSymbol="0" placeDirectionSymbol="0" rightDirectionSymbol=">" addDirectionSymbol="0" wrapChar="" decimals="3" multilineAlign="4294967295" plussign="0"/>
-          <placement preserveRotation="1" maxCurvedCharAngleOut="-25" placementFlags="9" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" fitInPolygonOnly="0" quadOffset="4" placement="3" centroidInside="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" distUnits="MM" xOffset="0" offsetType="0" rotationAngle="0" centroidWhole="0" distMapUnitScale="3x:0,0,0,0,0,0" maxCurvedCharAngleIn="25" repeatDistance="0" priority="5" offsetUnits="MM" yOffset="0" dist="0" repeatDistanceUnits="MM" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0"/>
-          <rendering drawLabels="1" scaleMin="0" obstacleFactor="1" limitNumLabels="0" upsidedownLabels="0" obstacleType="0" zIndex="0" scaleVisibility="0" maxNumLabels="2000" fontMinPixelSize="3" fontMaxPixelSize="10000" scaleMax="0" displayAll="0" labelPerPart="0" mergeLines="0" fontLimitPixelSize="0" minFeatureSize="0" obstacle="1"/>
+          <text-format decimals="3" multilineAlign="4294967295" formatNumbers="0" leftDirectionSymbol="&lt;" placeDirectionSymbol="0" wrapChar="" addDirectionSymbol="0" plussign="0" rightDirectionSymbol=">" reverseDirectionSymbol="0"/>
+          <placement distMapUnitScale="3x:0,0,0,0,0,0" yOffset="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" dist="0" repeatDistanceUnits="MM" offsetType="0" fitInPolygonOnly="0" offsetUnits="MM" centroidInside="0" rotationAngle="0" centroidWhole="0" repeatDistance="0" xOffset="0" quadOffset="4" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" distUnits="MM" placement="3" placementFlags="9" maxCurvedCharAngleIn="25" preserveRotation="1" maxCurvedCharAngleOut="-25" priority="5" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0"/>
+          <rendering obstacleFactor="1" minFeatureSize="0" upsidedownLabels="0" obstacle="1" maxNumLabels="2000" scaleMax="0" drawLabels="1" scaleMin="0" limitNumLabels="0" fontMinPixelSize="3" fontMaxPixelSize="10000" obstacleType="0" mergeLines="0" scaleVisibility="0" labelPerPart="0" displayAll="0" fontLimitPixelSize="0" zIndex="0"/>
           <dd_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </dd_properties>
         </settings>
       </rule>
-      <rule key="" filter="&quot;highway&quot; = 'residential' OR&#xa;&quot;highway&quot; = 'service'  OR&#xa;&quot;highway&quot; = 'tertiary' OR&#xa;&quot;highway&quot; = 'unclassified'" scalemaxdenom="25000" description="roads" scalemindenom="5000">
+      <rule key="" filter="&quot;highway&quot; = 'residential' OR&#xa;&quot;highway&quot; = 'service'  OR&#xa;&quot;highway&quot; = 'tertiary' OR&#xa;&quot;highway&quot; = 'unclassified'" scalemindenom="5000" scalemaxdenom="25000" description="roads">
         <settings>
-          <text-style fontSizeUnit="Point" fontWordSpacing="0" fontCapitals="0" fontStrikeout="0" fontSize="8" isExpression="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" fontItalic="0" fieldName="name" fontUnderline="0" textColor="0,0,0,255" textOpacity="1" fontLetterSpacing="0" namedStyle="Regular" previewBkgrdColor="#ffffff" blendMode="0" multilineHeight="1" fontFamily=".SF NS Text" fontWeight="50">
-            <text-buffer bufferOpacity="1" bufferSizeUnits="MM" bufferJoinStyle="128" bufferDraw="0" bufferColor="255,255,255,255" bufferSize="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferNoFill="1" bufferBlendMode="0"/>
-            <background shapeType="0" shapeOffsetY="0" shapeRotationType="0" shapeSizeX="0" shapeOffsetX="0" shapeBlendMode="0" shapeSizeY="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeBorderColor="128,128,128,255" shapeBorderWidth="0" shapeSVGFile="" shapeRadiiY="0" shapeOffsetUnit="MM" shapeOpacity="1" shapeBorderWidthUnit="MM" shapeDraw="0" shapeRotation="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeFillColor="255,255,255,255" shapeRadiiX="0" shapeSizeType="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeJoinStyle="64" shapeSizeUnit="MM"/>
-            <shadow shadowOffsetDist="1" shadowOffsetGlobal="1" shadowScale="100" shadowOffsetAngle="135" shadowBlendMode="6" shadowDraw="0" shadowOffsetUnit="MM" shadowRadius="1.5" shadowOpacity="0.7" shadowUnder="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusUnit="MM" shadowColor="0,0,0,255" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0"/>
+          <text-style fontSizeUnit="Point" fontItalic="0" fontWordSpacing="0" blendMode="0" fontCapitals="0" multilineHeight="1" fieldName="name" fontFamily=".SF NS Text" fontStrikeout="0" isExpression="0" fontLetterSpacing="0" fontWeight="50" namedStyle="Regular" textOpacity="1" fontUnderline="0" textColor="0,0,0,255" fontSizeMapUnitScale="3x:0,0,0,0,0,0" useSubstitutions="0" previewBkgrdColor="#ffffff" fontSize="8">
+            <text-buffer bufferOpacity="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSizeUnits="MM" bufferSize="1" bufferNoFill="1" bufferJoinStyle="128" bufferBlendMode="0" bufferDraw="0" bufferColor="255,255,255,255"/>
+            <background shapeRadiiX="0" shapeRotation="0" shapeJoinStyle="64" shapeOpacity="1" shapeOffsetUnit="MM" shapeBorderWidth="0" shapeFillColor="255,255,255,255" shapeDraw="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeSVGFile="" shapeRotationType="0" shapeBlendMode="0" shapeSizeType="0" shapeSizeY="0" shapeOffsetY="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetX="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeSizeUnit="MM" shapeRadiiY="0" shapeType="0" shapeBorderWidthUnit="MM" shapeBorderColor="128,128,128,255" shapeSizeX="0"/>
+            <shadow shadowDraw="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOpacity="0.7" shadowBlendMode="6" shadowRadiusUnit="MM" shadowColor="0,0,0,255" shadowScale="100" shadowOffsetGlobal="1" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetDist="1" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetAngle="135" shadowRadius="1.5"/>
             <substitutions/>
           </text-style>
-          <text-format formatNumbers="0" leftDirectionSymbol="&lt;" reverseDirectionSymbol="0" placeDirectionSymbol="0" rightDirectionSymbol=">" addDirectionSymbol="0" wrapChar="" decimals="3" multilineAlign="4294967295" plussign="0"/>
-          <placement preserveRotation="1" maxCurvedCharAngleOut="-25" placementFlags="9" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" fitInPolygonOnly="0" quadOffset="4" placement="3" centroidInside="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" distUnits="MM" xOffset="0" offsetType="0" rotationAngle="0" centroidWhole="0" distMapUnitScale="3x:0,0,0,0,0,0" maxCurvedCharAngleIn="25" repeatDistance="0" priority="5" offsetUnits="MM" yOffset="0" dist="0" repeatDistanceUnits="MM" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0"/>
-          <rendering drawLabels="1" scaleMin="0" obstacleFactor="1" limitNumLabels="0" upsidedownLabels="0" obstacleType="0" zIndex="0" scaleVisibility="0" maxNumLabels="2000" fontMinPixelSize="3" fontMaxPixelSize="10000" scaleMax="0" displayAll="0" labelPerPart="0" mergeLines="0" fontLimitPixelSize="0" minFeatureSize="0" obstacle="1"/>
+          <text-format decimals="3" multilineAlign="4294967295" formatNumbers="0" leftDirectionSymbol="&lt;" placeDirectionSymbol="0" wrapChar="" addDirectionSymbol="0" plussign="0" rightDirectionSymbol=">" reverseDirectionSymbol="0"/>
+          <placement distMapUnitScale="3x:0,0,0,0,0,0" yOffset="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" dist="0" repeatDistanceUnits="MM" offsetType="0" fitInPolygonOnly="0" offsetUnits="MM" centroidInside="0" rotationAngle="0" centroidWhole="0" repeatDistance="0" xOffset="0" quadOffset="4" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" distUnits="MM" placement="3" placementFlags="9" maxCurvedCharAngleIn="25" preserveRotation="1" maxCurvedCharAngleOut="-25" priority="5" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0"/>
+          <rendering obstacleFactor="1" minFeatureSize="0" upsidedownLabels="0" obstacle="1" maxNumLabels="2000" scaleMax="0" drawLabels="1" scaleMin="0" limitNumLabels="0" fontMinPixelSize="3" fontMaxPixelSize="10000" obstacleType="0" mergeLines="0" scaleVisibility="0" labelPerPart="0" displayAll="0" fontLimitPixelSize="0" zIndex="0"/>
           <dd_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </dd_properties>
         </settings>
@@ -711,18 +711,18 @@
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
-  <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-    <DiagramCategory minimumSize="0" penWidth="0" backgroundAlpha="255" width="15" scaleBasedVisibility="0" scaleDependency="Area" maxScaleDenominator="1e+8" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" enabled="0" backgroundColor="#ffffff" penColor="#000000" height="15" labelPlacementMethod="XHeight" rotationOffset="270" barWidth="5" opacity="1" minScaleDenominator="0" diagramOrientation="Up" penAlpha="255">
-      <fontProperties style="" description=".SF NS Text,13,-1,5,50,0,0,0,0,0"/>
-      <attribute label="" field="" color="#000000"/>
+  <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+    <DiagramCategory backgroundAlpha="255" sizeScale="3x:0,0,0,0,0,0" penAlpha="255" penColor="#000000" width="15" backgroundColor="#ffffff" scaleBasedVisibility="0" maxScaleDenominator="1e+8" opacity="1" scaleDependency="Area" enabled="0" height="15" labelPlacementMethod="XHeight" minimumSize="0" sizeType="MM" lineSizeType="MM" diagramOrientation="Up" penWidth="0" barWidth="5" rotationOffset="270" lineSizeScale="3x:0,0,0,0,0,0" minScaleDenominator="0">
+      <fontProperties description=".SF NS Text,13,-1,5,50,0,0,0,0,0" style=""/>
+      <attribute label="" color="#000000" field=""/>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings obstacle="0" placement="2" zIndex="0" linePlacementFlags="18" showAll="1" priority="0" dist="0">
+  <DiagramLayerSettings zIndex="0" obstacle="0" dist="0" priority="0" linePlacementFlags="18" showAll="1" placement="2">
     <properties>
       <Option type="Map">
-        <Option name="name" value="" type="QString"/>
+        <Option value="" name="name" type="QString"/>
         <Option name="properties"/>
-        <Option name="type" value="collection" type="QString"/>
+        <Option value="collection" name="type" type="QString"/>
       </Option>
     </properties>
   </DiagramLayerSettings>
@@ -876,126 +876,126 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias name="" field="full_id" index="0"/>
-    <alias name="" field="osm_id" index="1"/>
-    <alias name="" field="osm_type" index="2"/>
-    <alias name="" field="highway" index="3"/>
-    <alias name="" field="name" index="4"/>
-    <alias name="" field="admin_level" index="5"/>
-    <alias name="" field="boundary" index="6"/>
-    <alias name="" field="name:left" index="7"/>
-    <alias name="" field="name:right" index="8"/>
-    <alias name="" field="surface" index="9"/>
-    <alias name="" field="tracktype" index="10"/>
-    <alias name="" field="ref" index="11"/>
-    <alias name="" field="bicycle" index="12"/>
-    <alias name="" field="cycleway" index="13"/>
-    <alias name="" field="mtb:scale" index="14"/>
-    <alias name="" field="oneway:bicycle" index="15"/>
-    <alias name="" field="waterway" index="16"/>
-    <alias name="" field="barrier" index="17"/>
-    <alias name="" field="service" index="18"/>
-    <alias name="" field="natural" index="19"/>
-    <alias name="" field="layer" index="20"/>
+    <alias name="" index="0" field="full_id"/>
+    <alias name="" index="1" field="osm_id"/>
+    <alias name="" index="2" field="osm_type"/>
+    <alias name="" index="3" field="highway"/>
+    <alias name="" index="4" field="name"/>
+    <alias name="" index="5" field="admin_level"/>
+    <alias name="" index="6" field="boundary"/>
+    <alias name="" index="7" field="name:left"/>
+    <alias name="" index="8" field="name:right"/>
+    <alias name="" index="9" field="surface"/>
+    <alias name="" index="10" field="tracktype"/>
+    <alias name="" index="11" field="ref"/>
+    <alias name="" index="12" field="bicycle"/>
+    <alias name="" index="13" field="cycleway"/>
+    <alias name="" index="14" field="mtb:scale"/>
+    <alias name="" index="15" field="oneway:bicycle"/>
+    <alias name="" index="16" field="waterway"/>
+    <alias name="" index="17" field="barrier"/>
+    <alias name="" index="18" field="service"/>
+    <alias name="" index="19" field="natural"/>
+    <alias name="" index="20" field="layer"/>
   </aliases>
   <excludeAttributesWMS/>
   <excludeAttributesWFS/>
   <defaults>
-    <default field="full_id" expression="" applyOnUpdate="0"/>
-    <default field="osm_id" expression="" applyOnUpdate="0"/>
-    <default field="osm_type" expression="" applyOnUpdate="0"/>
-    <default field="highway" expression="" applyOnUpdate="0"/>
-    <default field="name" expression="" applyOnUpdate="0"/>
-    <default field="admin_level" expression="" applyOnUpdate="0"/>
-    <default field="boundary" expression="" applyOnUpdate="0"/>
-    <default field="name:left" expression="" applyOnUpdate="0"/>
-    <default field="name:right" expression="" applyOnUpdate="0"/>
-    <default field="surface" expression="" applyOnUpdate="0"/>
-    <default field="tracktype" expression="" applyOnUpdate="0"/>
-    <default field="ref" expression="" applyOnUpdate="0"/>
-    <default field="bicycle" expression="" applyOnUpdate="0"/>
-    <default field="cycleway" expression="" applyOnUpdate="0"/>
-    <default field="mtb:scale" expression="" applyOnUpdate="0"/>
-    <default field="oneway:bicycle" expression="" applyOnUpdate="0"/>
-    <default field="waterway" expression="" applyOnUpdate="0"/>
-    <default field="barrier" expression="" applyOnUpdate="0"/>
-    <default field="service" expression="" applyOnUpdate="0"/>
-    <default field="natural" expression="" applyOnUpdate="0"/>
-    <default field="layer" expression="" applyOnUpdate="0"/>
+    <default applyOnUpdate="0" expression="" field="full_id"/>
+    <default applyOnUpdate="0" expression="" field="osm_id"/>
+    <default applyOnUpdate="0" expression="" field="osm_type"/>
+    <default applyOnUpdate="0" expression="" field="highway"/>
+    <default applyOnUpdate="0" expression="" field="name"/>
+    <default applyOnUpdate="0" expression="" field="admin_level"/>
+    <default applyOnUpdate="0" expression="" field="boundary"/>
+    <default applyOnUpdate="0" expression="" field="name:left"/>
+    <default applyOnUpdate="0" expression="" field="name:right"/>
+    <default applyOnUpdate="0" expression="" field="surface"/>
+    <default applyOnUpdate="0" expression="" field="tracktype"/>
+    <default applyOnUpdate="0" expression="" field="ref"/>
+    <default applyOnUpdate="0" expression="" field="bicycle"/>
+    <default applyOnUpdate="0" expression="" field="cycleway"/>
+    <default applyOnUpdate="0" expression="" field="mtb:scale"/>
+    <default applyOnUpdate="0" expression="" field="oneway:bicycle"/>
+    <default applyOnUpdate="0" expression="" field="waterway"/>
+    <default applyOnUpdate="0" expression="" field="barrier"/>
+    <default applyOnUpdate="0" expression="" field="service"/>
+    <default applyOnUpdate="0" expression="" field="natural"/>
+    <default applyOnUpdate="0" expression="" field="layer"/>
   </defaults>
   <constraints>
-    <constraint unique_strength="0" exp_strength="0" field="full_id" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" field="osm_id" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" field="osm_type" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" field="highway" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" field="name" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" field="admin_level" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" field="boundary" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" field="name:left" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" field="name:right" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" field="surface" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" field="tracktype" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" field="ref" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" field="bicycle" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" field="cycleway" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" field="mtb:scale" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" field="oneway:bicycle" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" field="waterway" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" field="barrier" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" field="service" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" field="natural" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" field="layer" constraints="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="full_id"/>
+    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="osm_id"/>
+    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="osm_type"/>
+    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="highway"/>
+    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="name"/>
+    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="admin_level"/>
+    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="boundary"/>
+    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="name:left"/>
+    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="name:right"/>
+    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="surface"/>
+    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="tracktype"/>
+    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="ref"/>
+    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="bicycle"/>
+    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="cycleway"/>
+    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="mtb:scale"/>
+    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="oneway:bicycle"/>
+    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="waterway"/>
+    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="barrier"/>
+    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="service"/>
+    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="natural"/>
+    <constraint exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0" field="layer"/>
   </constraints>
   <constraintExpressions>
-    <constraint field="full_id" desc="" exp=""/>
-    <constraint field="osm_id" desc="" exp=""/>
-    <constraint field="osm_type" desc="" exp=""/>
-    <constraint field="highway" desc="" exp=""/>
-    <constraint field="name" desc="" exp=""/>
-    <constraint field="admin_level" desc="" exp=""/>
-    <constraint field="boundary" desc="" exp=""/>
-    <constraint field="name:left" desc="" exp=""/>
-    <constraint field="name:right" desc="" exp=""/>
-    <constraint field="surface" desc="" exp=""/>
-    <constraint field="tracktype" desc="" exp=""/>
-    <constraint field="ref" desc="" exp=""/>
-    <constraint field="bicycle" desc="" exp=""/>
-    <constraint field="cycleway" desc="" exp=""/>
-    <constraint field="mtb:scale" desc="" exp=""/>
-    <constraint field="oneway:bicycle" desc="" exp=""/>
-    <constraint field="waterway" desc="" exp=""/>
-    <constraint field="barrier" desc="" exp=""/>
-    <constraint field="service" desc="" exp=""/>
-    <constraint field="natural" desc="" exp=""/>
-    <constraint field="layer" desc="" exp=""/>
+    <constraint desc="" exp="" field="full_id"/>
+    <constraint desc="" exp="" field="osm_id"/>
+    <constraint desc="" exp="" field="osm_type"/>
+    <constraint desc="" exp="" field="highway"/>
+    <constraint desc="" exp="" field="name"/>
+    <constraint desc="" exp="" field="admin_level"/>
+    <constraint desc="" exp="" field="boundary"/>
+    <constraint desc="" exp="" field="name:left"/>
+    <constraint desc="" exp="" field="name:right"/>
+    <constraint desc="" exp="" field="surface"/>
+    <constraint desc="" exp="" field="tracktype"/>
+    <constraint desc="" exp="" field="ref"/>
+    <constraint desc="" exp="" field="bicycle"/>
+    <constraint desc="" exp="" field="cycleway"/>
+    <constraint desc="" exp="" field="mtb:scale"/>
+    <constraint desc="" exp="" field="oneway:bicycle"/>
+    <constraint desc="" exp="" field="waterway"/>
+    <constraint desc="" exp="" field="barrier"/>
+    <constraint desc="" exp="" field="service"/>
+    <constraint desc="" exp="" field="natural"/>
+    <constraint desc="" exp="" field="layer"/>
   </constraintExpressions>
   <attributeactions>
     <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
-  <attributetableconfig sortOrder="1" sortExpression="&quot;name:right&quot;" actionWidgetStyle="dropDown">
+  <attributetableconfig sortOrder="1" actionWidgetStyle="dropDown" sortExpression="&quot;name:right&quot;">
     <columns>
-      <column name="osm_id" width="-1" type="field" hidden="0"/>
-      <column name="name" width="-1" type="field" hidden="0"/>
-      <column width="-1" type="actions" hidden="1"/>
-      <column name="highway" width="-1" type="field" hidden="0"/>
-      <column name="waterway" width="-1" type="field" hidden="0"/>
-      <column name="full_id" width="-1" type="field" hidden="0"/>
-      <column name="osm_type" width="-1" type="field" hidden="0"/>
-      <column name="surface" width="-1" type="field" hidden="0"/>
-      <column name="bicycle" width="-1" type="field" hidden="0"/>
-      <column name="service" width="-1" type="field" hidden="0"/>
-      <column name="layer" width="-1" type="field" hidden="0"/>
-      <column name="cycleway" width="-1" type="field" hidden="0"/>
-      <column name="oneway:bicycle" width="-1" type="field" hidden="0"/>
-      <column name="ref" width="-1" type="field" hidden="0"/>
-      <column name="tracktype" width="-1" type="field" hidden="0"/>
-      <column name="mtb:scale" width="-1" type="field" hidden="0"/>
-      <column name="barrier" width="-1" type="field" hidden="0"/>
-      <column name="name:left" width="-1" type="field" hidden="0"/>
-      <column name="name:right" width="-1" type="field" hidden="0"/>
-      <column name="natural" width="-1" type="field" hidden="0"/>
-      <column name="admin_level" width="-1" type="field" hidden="0"/>
-      <column name="boundary" width="-1" type="field" hidden="0"/>
+      <column width="-1" name="osm_id" hidden="0" type="field"/>
+      <column width="-1" name="name" hidden="0" type="field"/>
+      <column width="-1" hidden="1" type="actions"/>
+      <column width="-1" name="highway" hidden="0" type="field"/>
+      <column width="-1" name="waterway" hidden="0" type="field"/>
+      <column width="-1" name="full_id" hidden="0" type="field"/>
+      <column width="-1" name="osm_type" hidden="0" type="field"/>
+      <column width="-1" name="surface" hidden="0" type="field"/>
+      <column width="-1" name="bicycle" hidden="0" type="field"/>
+      <column width="-1" name="service" hidden="0" type="field"/>
+      <column width="-1" name="layer" hidden="0" type="field"/>
+      <column width="-1" name="cycleway" hidden="0" type="field"/>
+      <column width="-1" name="oneway:bicycle" hidden="0" type="field"/>
+      <column width="-1" name="ref" hidden="0" type="field"/>
+      <column width="-1" name="tracktype" hidden="0" type="field"/>
+      <column width="-1" name="mtb:scale" hidden="0" type="field"/>
+      <column width="-1" name="barrier" hidden="0" type="field"/>
+      <column width="-1" name="name:left" hidden="0" type="field"/>
+      <column width="-1" name="name:right" hidden="0" type="field"/>
+      <column width="-1" name="natural" hidden="0" type="field"/>
+      <column width="-1" name="admin_level" hidden="0" type="field"/>
+      <column width="-1" name="boundary" hidden="0" type="field"/>
     </columns>
   </attributetableconfig>
   <editform tolerant="1"></editform>
@@ -1380,362 +1380,362 @@ def my_form_open(dialog, layer, feature):
     <field name="z_order" editable="1"/>
   </editable>
   <labelOnTop>
-    <field name="abandoned" labelOnTop="0"/>
-    <field name="abandoned:highway" labelOnTop="0"/>
-    <field name="access" labelOnTop="0"/>
-    <field name="access:conditional" labelOnTop="0"/>
-    <field name="access:forward" labelOnTop="0"/>
-    <field name="access:fuel:lpg" labelOnTop="0"/>
-    <field name="addr:city" labelOnTop="0"/>
-    <field name="addr:interpolation" labelOnTop="0"/>
-    <field name="addr:street" labelOnTop="0"/>
-    <field name="admin_level" labelOnTop="0"/>
-    <field name="aerialway" labelOnTop="0"/>
-    <field name="aeroway" labelOnTop="0"/>
-    <field name="agricultural" labelOnTop="0"/>
-    <field name="alt_name" labelOnTop="0"/>
-    <field name="alt_name:de" labelOnTop="0"/>
-    <field name="amenity" labelOnTop="0"/>
-    <field name="animal" labelOnTop="0"/>
-    <field name="annotation" labelOnTop="0"/>
-    <field name="arcade:left" labelOnTop="0"/>
-    <field name="arcade:right" labelOnTop="0"/>
-    <field name="area" labelOnTop="0"/>
-    <field name="arpav_codice_bacino" labelOnTop="0"/>
-    <field name="arpav_codice_sottobacino" labelOnTop="0"/>
-    <field name="asphalt" labelOnTop="0"/>
-    <field name="avalanche_protector:left" labelOnTop="0"/>
-    <field name="backrest" labelOnTop="0"/>
-    <field name="barrier" labelOnTop="0"/>
-    <field name="barrier_type" labelOnTop="0"/>
-    <field name="bench" labelOnTop="0"/>
-    <field name="bicycle" labelOnTop="0"/>
-    <field name="bicycle:oneway" labelOnTop="0"/>
-    <field name="bicycle_parking" labelOnTop="0"/>
-    <field name="boat" labelOnTop="0"/>
-    <field name="boundary" labelOnTop="0"/>
-    <field name="bridge" labelOnTop="0"/>
-    <field name="bridge:movable" labelOnTop="0"/>
-    <field name="bridge:name" labelOnTop="0"/>
-    <field name="bridge:structure" labelOnTop="0"/>
-    <field name="bridge_name" labelOnTop="0"/>
-    <field name="building:part" labelOnTop="0"/>
-    <field name="bus" labelOnTop="0"/>
-    <field name="busway" labelOnTop="0"/>
-    <field name="busway:left" labelOnTop="0"/>
-    <field name="busway:right" labelOnTop="0"/>
-    <field name="cables" labelOnTop="0"/>
-    <field name="capacity" labelOnTop="0"/>
-    <field name="check_date" labelOnTop="0"/>
-    <field name="class:bicycle:mtb" labelOnTop="0"/>
-    <field name="collapsed:building" labelOnTop="0"/>
-    <field name="colonnade:left" labelOnTop="0"/>
-    <field name="colonnade:right" labelOnTop="0"/>
-    <field name="colour" labelOnTop="0"/>
-    <field name="comment" labelOnTop="0"/>
-    <field name="comment:en" labelOnTop="0"/>
-    <field name="communication" labelOnTop="0"/>
-    <field name="construction" labelOnTop="0"/>
-    <field name="construction:leisure" labelOnTop="0"/>
-    <field name="covered" labelOnTop="0"/>
-    <field name="covered:left" labelOnTop="0"/>
-    <field name="covered:right" labelOnTop="0"/>
-    <field name="crossing" labelOnTop="0"/>
-    <field name="crossing:island" labelOnTop="0"/>
-    <field name="crossing_ref" labelOnTop="0"/>
-    <field name="culvert" labelOnTop="0"/>
-    <field name="cutting" labelOnTop="0"/>
-    <field name="cycleway" labelOnTop="0"/>
-    <field name="cycleway:bicycle" labelOnTop="0"/>
-    <field name="cycleway:both" labelOnTop="0"/>
-    <field name="cycleway:both:lane" labelOnTop="0"/>
-    <field name="cycleway:both:segregated" labelOnTop="0"/>
-    <field name="cycleway:left" labelOnTop="0"/>
-    <field name="cycleway:left:oneway" labelOnTop="0"/>
-    <field name="cycleway:left:smoothness" labelOnTop="0"/>
-    <field name="cycleway:left:surface" labelOnTop="0"/>
-    <field name="cycleway:left:width" labelOnTop="0"/>
-    <field name="cycleway:right" labelOnTop="0"/>
-    <field name="cycleway:right:bicycle" labelOnTop="0"/>
-    <field name="cycleway:right:oneway" labelOnTop="0"/>
-    <field name="cycleway:right:width" labelOnTop="0"/>
-    <field name="danger" labelOnTop="0"/>
-    <field name="denotation" labelOnTop="0"/>
-    <field name="description" labelOnTop="0"/>
-    <field name="destination" labelOnTop="0"/>
-    <field name="destination:lanes" labelOnTop="0"/>
-    <field name="destination:ref" labelOnTop="0"/>
-    <field name="direction" labelOnTop="0"/>
-    <field name="dismantled:barrier" labelOnTop="0"/>
-    <field name="dismount" labelOnTop="0"/>
-    <field name="disused" labelOnTop="0"/>
-    <field name="disused:amenity" labelOnTop="0"/>
-    <field name="disused:building" labelOnTop="0"/>
-    <field name="disused:highway" labelOnTop="0"/>
-    <field name="ele" labelOnTop="0"/>
-    <field name="electric_car" labelOnTop="0"/>
-    <field name="electrified" labelOnTop="0"/>
-    <field name="embankment" labelOnTop="0"/>
-    <field name="emergency" labelOnTop="0"/>
-    <field name="entrance" labelOnTop="0"/>
-    <field name="est_height" labelOnTop="0"/>
-    <field name="est_width" labelOnTop="0"/>
-    <field name="fee" labelOnTop="0"/>
-    <field name="fence_type" labelOnTop="0"/>
-    <field name="fid" labelOnTop="0"/>
-    <field name="floating" labelOnTop="0"/>
-    <field name="flow_direction" labelOnTop="0"/>
-    <field name="foot" labelOnTop="0"/>
-    <field name="footway" labelOnTop="0"/>
-    <field name="footway:left" labelOnTop="0"/>
-    <field name="ford" labelOnTop="0"/>
-    <field name="frequency" labelOnTop="0"/>
-    <field name="full_id" labelOnTop="0"/>
-    <field name="gauge" labelOnTop="0"/>
-    <field name="generator:method" labelOnTop="0"/>
-    <field name="generator:output:electricity" labelOnTop="0"/>
-    <field name="generator:source" labelOnTop="0"/>
-    <field name="generator:type" labelOnTop="0"/>
-    <field name="goods" labelOnTop="0"/>
-    <field name="goods:conditional" labelOnTop="0"/>
-    <field name="handrail" labelOnTop="0"/>
-    <field name="handrail:both" labelOnTop="0"/>
-    <field name="handrail:center" labelOnTop="0"/>
-    <field name="handrail:height" labelOnTop="0"/>
-    <field name="handrail:left" labelOnTop="0"/>
-    <field name="handrail:material" labelOnTop="0"/>
-    <field name="handrail:right" labelOnTop="0"/>
-    <field name="hazmat" labelOnTop="0"/>
-    <field name="health_facility:type" labelOnTop="0"/>
-    <field name="height" labelOnTop="0"/>
-    <field name="hgv" labelOnTop="0"/>
-    <field name="highway" labelOnTop="0"/>
-    <field name="historic" labelOnTop="0"/>
-    <field name="historic:civilization" labelOnTop="0"/>
-    <field name="history" labelOnTop="0"/>
-    <field name="horse" labelOnTop="0"/>
-    <field name="horse:source" labelOnTop="0"/>
-    <field name="hour_off" labelOnTop="0"/>
-    <field name="hour_on" labelOnTop="0"/>
-    <field name="hov" labelOnTop="0"/>
-    <field name="incline" labelOnTop="0"/>
-    <field name="incline:across" labelOnTop="0"/>
-    <field name="incline:transversal" labelOnTop="0"/>
-    <field name="incline:transverse" labelOnTop="0"/>
-    <field name="indoor" labelOnTop="0"/>
-    <field name="informal" labelOnTop="0"/>
-    <field name="int_ref" labelOnTop="0"/>
-    <field name="intermittent" labelOnTop="0"/>
-    <field name="internet_access" labelOnTop="0"/>
-    <field name="internet_access:fee" labelOnTop="0"/>
-    <field name="internet_access:operator" labelOnTop="0"/>
-    <field name="is_in" labelOnTop="0"/>
-    <field name="is_in:city" labelOnTop="0"/>
-    <field name="is_in:town" labelOnTop="0"/>
-    <field name="junction" labelOnTop="0"/>
-    <field name="kerb" labelOnTop="0"/>
-    <field name="landcover" labelOnTop="0"/>
-    <field name="lane:width" labelOnTop="0"/>
-    <field name="lanes" labelOnTop="0"/>
-    <field name="lanes:backward" labelOnTop="0"/>
-    <field name="lanes:forward" labelOnTop="0"/>
-    <field name="lanes:psv:backward" labelOnTop="0"/>
-    <field name="layer" labelOnTop="0"/>
-    <field name="leaf_cycle" labelOnTop="0"/>
-    <field name="leaf_type" labelOnTop="0"/>
-    <field name="leisure" labelOnTop="0"/>
-    <field name="length" labelOnTop="0"/>
-    <field name="level" labelOnTop="0"/>
-    <field name="levels" labelOnTop="0"/>
-    <field name="line" labelOnTop="0"/>
-    <field name="lit" labelOnTop="0"/>
-    <field name="loc_name" labelOnTop="0"/>
-    <field name="loc_ref" labelOnTop="0"/>
-    <field name="location" labelOnTop="0"/>
-    <field name="lock" labelOnTop="0"/>
-    <field name="man_made" labelOnTop="0"/>
-    <field name="material" labelOnTop="0"/>
-    <field name="maxheight" labelOnTop="0"/>
-    <field name="maxlength" labelOnTop="0"/>
-    <field name="maxspeed" labelOnTop="0"/>
-    <field name="maxspeed:advisory" labelOnTop="0"/>
-    <field name="maxspeed:lanes" labelOnTop="0"/>
-    <field name="maxspeed:source" labelOnTop="0"/>
-    <field name="maxspeed:type" labelOnTop="0"/>
-    <field name="maxweight" labelOnTop="0"/>
-    <field name="maxwidth" labelOnTop="0"/>
-    <field name="mooring" labelOnTop="0"/>
-    <field name="moped" labelOnTop="0"/>
-    <field name="motor_vehicle" labelOnTop="0"/>
-    <field name="motorboat" labelOnTop="0"/>
-    <field name="motorcar" labelOnTop="0"/>
-    <field name="motorcycle" labelOnTop="0"/>
-    <field name="motorroad" labelOnTop="0"/>
-    <field name="mtb" labelOnTop="0"/>
-    <field name="mtb:scale" labelOnTop="0"/>
-    <field name="mtb:scale:imba" labelOnTop="0"/>
-    <field name="mtb:scale:uphill" labelOnTop="0"/>
-    <field name="mtb:type" labelOnTop="0"/>
-    <field name="name" labelOnTop="0"/>
-    <field name="name:de" labelOnTop="0"/>
-    <field name="name:eml" labelOnTop="0"/>
-    <field name="name:etymology:wikidata" labelOnTop="0"/>
-    <field name="name:it" labelOnTop="0"/>
-    <field name="name:language" labelOnTop="0"/>
-    <field name="name:left" labelOnTop="0"/>
-    <field name="name:loc" labelOnTop="0"/>
-    <field name="name:right" labelOnTop="0"/>
-    <field name="narrow" labelOnTop="0"/>
-    <field name="nat_name" labelOnTop="0"/>
-    <field name="nat_ref" labelOnTop="0"/>
-    <field name="natural" labelOnTop="0"/>
-    <field name="network" labelOnTop="0"/>
-    <field name="noexit" labelOnTop="0"/>
-    <field name="noname" labelOnTop="0"/>
-    <field name="note:source" labelOnTop="0"/>
-    <field name="obstacle" labelOnTop="0"/>
-    <field name="obstacle:wheelchair" labelOnTop="0"/>
-    <field name="odbl" labelOnTop="0"/>
-    <field name="old_name" labelOnTop="0"/>
-    <field name="old_ref" labelOnTop="0"/>
-    <field name="oneway" labelOnTop="0"/>
-    <field name="oneway:bicycle" labelOnTop="0"/>
-    <field name="oneway:bus" labelOnTop="0"/>
-    <field name="oneway:conditional" labelOnTop="0"/>
-    <field name="oneway:destination" labelOnTop="0"/>
-    <field name="oneway:emergency" labelOnTop="0"/>
-    <field name="oneway:foot" labelOnTop="0"/>
-    <field name="oneway:hour_off" labelOnTop="0"/>
-    <field name="oneway:hour_on" labelOnTop="0"/>
-    <field name="oneway:moped" labelOnTop="0"/>
-    <field name="oneway:motorcycle" labelOnTop="0"/>
-    <field name="oneway:psv" labelOnTop="0"/>
-    <field name="opening_hours" labelOnTop="0"/>
-    <field name="operator" labelOnTop="0"/>
-    <field name="osm_id" labelOnTop="0"/>
-    <field name="osm_type" labelOnTop="0"/>
-    <field name="other_tags" labelOnTop="0"/>
-    <field name="parking:condition:both" labelOnTop="0"/>
-    <field name="parking:condition:left" labelOnTop="0"/>
-    <field name="parking:lane:both" labelOnTop="0"/>
-    <field name="parking:lane:left" labelOnTop="0"/>
-    <field name="parking:lane:right" labelOnTop="0"/>
-    <field name="parking:lane:right:capacity" labelOnTop="0"/>
-    <field name="passenger_lines" labelOnTop="0"/>
-    <field name="passing_places" labelOnTop="0"/>
-    <field name="path" labelOnTop="0"/>
-    <field name="path:left" labelOnTop="0"/>
-    <field name="path:left:bicycle" labelOnTop="0"/>
-    <field name="path:left:foot" labelOnTop="0"/>
-    <field name="path:left:oneway:bicycle=-1" labelOnTop="0"/>
-    <field name="path:left:segregated" labelOnTop="0"/>
-    <field name="path:left:width" labelOnTop="0"/>
-    <field name="power" labelOnTop="0"/>
-    <field name="priority" labelOnTop="0"/>
-    <field name="psv" labelOnTop="0"/>
-    <field name="public_transport" labelOnTop="0"/>
-    <field name="pumping_capacity" labelOnTop="0"/>
-    <field name="railway" labelOnTop="0"/>
-    <field name="ramp" labelOnTop="0"/>
-    <field name="ramp:luggage" labelOnTop="0"/>
-    <field name="ramp:wheelchair" labelOnTop="0"/>
-    <field name="razed:railway" labelOnTop="0"/>
-    <field name="ref" labelOnTop="0"/>
-    <field name="ref:hiking" labelOnTop="0"/>
-    <field name="ref:terna" labelOnTop="0"/>
-    <field name="ref:terna:codice" labelOnTop="0"/>
-    <field name="reg_name" labelOnTop="0"/>
-    <field name="reg_ref" labelOnTop="0"/>
-    <field name="restriction" labelOnTop="0"/>
-    <field name="route_ref" labelOnTop="0"/>
-    <field name="sac_scale" labelOnTop="0"/>
-    <field name="sac_scale_ref" labelOnTop="0"/>
-    <field name="seats" labelOnTop="0"/>
-    <field name="segregated" labelOnTop="0"/>
-    <field name="segregated:left" labelOnTop="0"/>
-    <field name="segregated:right" labelOnTop="0"/>
-    <field name="service" labelOnTop="0"/>
-    <field name="shelter" labelOnTop="0"/>
-    <field name="short_name" labelOnTop="0"/>
-    <field name="short_name:de" labelOnTop="0"/>
-    <field name="short_name:it" labelOnTop="0"/>
-    <field name="shortest_name" labelOnTop="0"/>
-    <field name="sidewalk" labelOnTop="0"/>
-    <field name="sidewalk:left" labelOnTop="0"/>
-    <field name="sidewalk:left:smoothness" labelOnTop="0"/>
-    <field name="sidewalk:right:bicycle" labelOnTop="0"/>
-    <field name="sidewalk:right:smoothness" labelOnTop="0"/>
-    <field name="sidewalk:smoothness" labelOnTop="0"/>
-    <field name="sidewalk:surface" labelOnTop="0"/>
-    <field name="sidewalk:width" labelOnTop="0"/>
-    <field name="ski" labelOnTop="0"/>
-    <field name="smoothness" labelOnTop="0"/>
-    <field name="source:def" labelOnTop="0"/>
-    <field name="source:est_width" labelOnTop="0"/>
-    <field name="source:hgv" labelOnTop="0"/>
-    <field name="source:horse" labelOnTop="0"/>
-    <field name="source:maxheight" labelOnTop="0"/>
-    <field name="source:maxspeed" labelOnTop="0"/>
-    <field name="source:maxweight" labelOnTop="0"/>
-    <field name="source:maxwidth" labelOnTop="0"/>
-    <field name="source:name" labelOnTop="0"/>
-    <field name="source:oneway" labelOnTop="0"/>
-    <field name="source:position" labelOnTop="0"/>
-    <field name="source:shape" labelOnTop="0"/>
-    <field name="source:vehicle" labelOnTop="0"/>
-    <field name="source:width" labelOnTop="0"/>
-    <field name="sport" labelOnTop="0"/>
-    <field name="start_date" labelOnTop="0"/>
-    <field name="step.condition" labelOnTop="0"/>
-    <field name="step.height" labelOnTop="0"/>
-    <field name="step_count" labelOnTop="0"/>
-    <field name="substance" labelOnTop="0"/>
-    <field name="substation" labelOnTop="0"/>
-    <field name="surface" labelOnTop="0"/>
-    <field name="surface.material" labelOnTop="0"/>
-    <field name="surface:colour" labelOnTop="0"/>
-    <field name="tactile_paving" labelOnTop="0"/>
-    <field name="taxi" labelOnTop="0"/>
-    <field name="temporary:access" labelOnTop="0"/>
-    <field name="temporary:date_off" labelOnTop="0"/>
-    <field name="toll" labelOnTop="0"/>
-    <field name="tourism" labelOnTop="0"/>
-    <field name="tourist_bus" labelOnTop="0"/>
-    <field name="tower:type" labelOnTop="0"/>
-    <field name="track:width" labelOnTop="0"/>
-    <field name="tracks" labelOnTop="0"/>
-    <field name="tracktype" labelOnTop="0"/>
-    <field name="traffic" labelOnTop="0"/>
-    <field name="traffic_calming" labelOnTop="0"/>
-    <field name="traffic_signals:sound" labelOnTop="0"/>
-    <field name="trail_visibility" labelOnTop="0"/>
-    <field name="tram" labelOnTop="0"/>
-    <field name="transit:lanes" labelOnTop="0"/>
-    <field name="trolley_wire" labelOnTop="0"/>
-    <field name="trolley_wire:both" labelOnTop="0"/>
-    <field name="trolley_wire:forward" labelOnTop="0"/>
-    <field name="tunnel" labelOnTop="0"/>
-    <field name="turn:lanes" labelOnTop="0"/>
-    <field name="turn:lanes:forward" labelOnTop="0"/>
-    <field name="two_sided" labelOnTop="0"/>
-    <field name="type" labelOnTop="0"/>
-    <field name="usage" labelOnTop="0"/>
-    <field name="vehicle" labelOnTop="0"/>
-    <field name="vehicles" labelOnTop="0"/>
-    <field name="visibility" labelOnTop="0"/>
-    <field name="voltage" labelOnTop="0"/>
-    <field name="wall" labelOnTop="0"/>
-    <field name="waterway" labelOnTop="0"/>
-    <field name="wheelchair" labelOnTop="0"/>
-    <field name="wheelchair:description:en" labelOnTop="0"/>
-    <field name="wheelchair:description:it" labelOnTop="0"/>
-    <field name="whitewater:section_grade" labelOnTop="0"/>
-    <field name="width" labelOnTop="0"/>
-    <field name="width:sidewalk" labelOnTop="0"/>
-    <field name="wikidata" labelOnTop="0"/>
-    <field name="wikipedia" labelOnTop="0"/>
-    <field name="wires" labelOnTop="0"/>
-    <field name="z_order" labelOnTop="0"/>
+    <field labelOnTop="0" name="abandoned"/>
+    <field labelOnTop="0" name="abandoned:highway"/>
+    <field labelOnTop="0" name="access"/>
+    <field labelOnTop="0" name="access:conditional"/>
+    <field labelOnTop="0" name="access:forward"/>
+    <field labelOnTop="0" name="access:fuel:lpg"/>
+    <field labelOnTop="0" name="addr:city"/>
+    <field labelOnTop="0" name="addr:interpolation"/>
+    <field labelOnTop="0" name="addr:street"/>
+    <field labelOnTop="0" name="admin_level"/>
+    <field labelOnTop="0" name="aerialway"/>
+    <field labelOnTop="0" name="aeroway"/>
+    <field labelOnTop="0" name="agricultural"/>
+    <field labelOnTop="0" name="alt_name"/>
+    <field labelOnTop="0" name="alt_name:de"/>
+    <field labelOnTop="0" name="amenity"/>
+    <field labelOnTop="0" name="animal"/>
+    <field labelOnTop="0" name="annotation"/>
+    <field labelOnTop="0" name="arcade:left"/>
+    <field labelOnTop="0" name="arcade:right"/>
+    <field labelOnTop="0" name="area"/>
+    <field labelOnTop="0" name="arpav_codice_bacino"/>
+    <field labelOnTop="0" name="arpav_codice_sottobacino"/>
+    <field labelOnTop="0" name="asphalt"/>
+    <field labelOnTop="0" name="avalanche_protector:left"/>
+    <field labelOnTop="0" name="backrest"/>
+    <field labelOnTop="0" name="barrier"/>
+    <field labelOnTop="0" name="barrier_type"/>
+    <field labelOnTop="0" name="bench"/>
+    <field labelOnTop="0" name="bicycle"/>
+    <field labelOnTop="0" name="bicycle:oneway"/>
+    <field labelOnTop="0" name="bicycle_parking"/>
+    <field labelOnTop="0" name="boat"/>
+    <field labelOnTop="0" name="boundary"/>
+    <field labelOnTop="0" name="bridge"/>
+    <field labelOnTop="0" name="bridge:movable"/>
+    <field labelOnTop="0" name="bridge:name"/>
+    <field labelOnTop="0" name="bridge:structure"/>
+    <field labelOnTop="0" name="bridge_name"/>
+    <field labelOnTop="0" name="building:part"/>
+    <field labelOnTop="0" name="bus"/>
+    <field labelOnTop="0" name="busway"/>
+    <field labelOnTop="0" name="busway:left"/>
+    <field labelOnTop="0" name="busway:right"/>
+    <field labelOnTop="0" name="cables"/>
+    <field labelOnTop="0" name="capacity"/>
+    <field labelOnTop="0" name="check_date"/>
+    <field labelOnTop="0" name="class:bicycle:mtb"/>
+    <field labelOnTop="0" name="collapsed:building"/>
+    <field labelOnTop="0" name="colonnade:left"/>
+    <field labelOnTop="0" name="colonnade:right"/>
+    <field labelOnTop="0" name="colour"/>
+    <field labelOnTop="0" name="comment"/>
+    <field labelOnTop="0" name="comment:en"/>
+    <field labelOnTop="0" name="communication"/>
+    <field labelOnTop="0" name="construction"/>
+    <field labelOnTop="0" name="construction:leisure"/>
+    <field labelOnTop="0" name="covered"/>
+    <field labelOnTop="0" name="covered:left"/>
+    <field labelOnTop="0" name="covered:right"/>
+    <field labelOnTop="0" name="crossing"/>
+    <field labelOnTop="0" name="crossing:island"/>
+    <field labelOnTop="0" name="crossing_ref"/>
+    <field labelOnTop="0" name="culvert"/>
+    <field labelOnTop="0" name="cutting"/>
+    <field labelOnTop="0" name="cycleway"/>
+    <field labelOnTop="0" name="cycleway:bicycle"/>
+    <field labelOnTop="0" name="cycleway:both"/>
+    <field labelOnTop="0" name="cycleway:both:lane"/>
+    <field labelOnTop="0" name="cycleway:both:segregated"/>
+    <field labelOnTop="0" name="cycleway:left"/>
+    <field labelOnTop="0" name="cycleway:left:oneway"/>
+    <field labelOnTop="0" name="cycleway:left:smoothness"/>
+    <field labelOnTop="0" name="cycleway:left:surface"/>
+    <field labelOnTop="0" name="cycleway:left:width"/>
+    <field labelOnTop="0" name="cycleway:right"/>
+    <field labelOnTop="0" name="cycleway:right:bicycle"/>
+    <field labelOnTop="0" name="cycleway:right:oneway"/>
+    <field labelOnTop="0" name="cycleway:right:width"/>
+    <field labelOnTop="0" name="danger"/>
+    <field labelOnTop="0" name="denotation"/>
+    <field labelOnTop="0" name="description"/>
+    <field labelOnTop="0" name="destination"/>
+    <field labelOnTop="0" name="destination:lanes"/>
+    <field labelOnTop="0" name="destination:ref"/>
+    <field labelOnTop="0" name="direction"/>
+    <field labelOnTop="0" name="dismantled:barrier"/>
+    <field labelOnTop="0" name="dismount"/>
+    <field labelOnTop="0" name="disused"/>
+    <field labelOnTop="0" name="disused:amenity"/>
+    <field labelOnTop="0" name="disused:building"/>
+    <field labelOnTop="0" name="disused:highway"/>
+    <field labelOnTop="0" name="ele"/>
+    <field labelOnTop="0" name="electric_car"/>
+    <field labelOnTop="0" name="electrified"/>
+    <field labelOnTop="0" name="embankment"/>
+    <field labelOnTop="0" name="emergency"/>
+    <field labelOnTop="0" name="entrance"/>
+    <field labelOnTop="0" name="est_height"/>
+    <field labelOnTop="0" name="est_width"/>
+    <field labelOnTop="0" name="fee"/>
+    <field labelOnTop="0" name="fence_type"/>
+    <field labelOnTop="0" name="fid"/>
+    <field labelOnTop="0" name="floating"/>
+    <field labelOnTop="0" name="flow_direction"/>
+    <field labelOnTop="0" name="foot"/>
+    <field labelOnTop="0" name="footway"/>
+    <field labelOnTop="0" name="footway:left"/>
+    <field labelOnTop="0" name="ford"/>
+    <field labelOnTop="0" name="frequency"/>
+    <field labelOnTop="0" name="full_id"/>
+    <field labelOnTop="0" name="gauge"/>
+    <field labelOnTop="0" name="generator:method"/>
+    <field labelOnTop="0" name="generator:output:electricity"/>
+    <field labelOnTop="0" name="generator:source"/>
+    <field labelOnTop="0" name="generator:type"/>
+    <field labelOnTop="0" name="goods"/>
+    <field labelOnTop="0" name="goods:conditional"/>
+    <field labelOnTop="0" name="handrail"/>
+    <field labelOnTop="0" name="handrail:both"/>
+    <field labelOnTop="0" name="handrail:center"/>
+    <field labelOnTop="0" name="handrail:height"/>
+    <field labelOnTop="0" name="handrail:left"/>
+    <field labelOnTop="0" name="handrail:material"/>
+    <field labelOnTop="0" name="handrail:right"/>
+    <field labelOnTop="0" name="hazmat"/>
+    <field labelOnTop="0" name="health_facility:type"/>
+    <field labelOnTop="0" name="height"/>
+    <field labelOnTop="0" name="hgv"/>
+    <field labelOnTop="0" name="highway"/>
+    <field labelOnTop="0" name="historic"/>
+    <field labelOnTop="0" name="historic:civilization"/>
+    <field labelOnTop="0" name="history"/>
+    <field labelOnTop="0" name="horse"/>
+    <field labelOnTop="0" name="horse:source"/>
+    <field labelOnTop="0" name="hour_off"/>
+    <field labelOnTop="0" name="hour_on"/>
+    <field labelOnTop="0" name="hov"/>
+    <field labelOnTop="0" name="incline"/>
+    <field labelOnTop="0" name="incline:across"/>
+    <field labelOnTop="0" name="incline:transversal"/>
+    <field labelOnTop="0" name="incline:transverse"/>
+    <field labelOnTop="0" name="indoor"/>
+    <field labelOnTop="0" name="informal"/>
+    <field labelOnTop="0" name="int_ref"/>
+    <field labelOnTop="0" name="intermittent"/>
+    <field labelOnTop="0" name="internet_access"/>
+    <field labelOnTop="0" name="internet_access:fee"/>
+    <field labelOnTop="0" name="internet_access:operator"/>
+    <field labelOnTop="0" name="is_in"/>
+    <field labelOnTop="0" name="is_in:city"/>
+    <field labelOnTop="0" name="is_in:town"/>
+    <field labelOnTop="0" name="junction"/>
+    <field labelOnTop="0" name="kerb"/>
+    <field labelOnTop="0" name="landcover"/>
+    <field labelOnTop="0" name="lane:width"/>
+    <field labelOnTop="0" name="lanes"/>
+    <field labelOnTop="0" name="lanes:backward"/>
+    <field labelOnTop="0" name="lanes:forward"/>
+    <field labelOnTop="0" name="lanes:psv:backward"/>
+    <field labelOnTop="0" name="layer"/>
+    <field labelOnTop="0" name="leaf_cycle"/>
+    <field labelOnTop="0" name="leaf_type"/>
+    <field labelOnTop="0" name="leisure"/>
+    <field labelOnTop="0" name="length"/>
+    <field labelOnTop="0" name="level"/>
+    <field labelOnTop="0" name="levels"/>
+    <field labelOnTop="0" name="line"/>
+    <field labelOnTop="0" name="lit"/>
+    <field labelOnTop="0" name="loc_name"/>
+    <field labelOnTop="0" name="loc_ref"/>
+    <field labelOnTop="0" name="location"/>
+    <field labelOnTop="0" name="lock"/>
+    <field labelOnTop="0" name="man_made"/>
+    <field labelOnTop="0" name="material"/>
+    <field labelOnTop="0" name="maxheight"/>
+    <field labelOnTop="0" name="maxlength"/>
+    <field labelOnTop="0" name="maxspeed"/>
+    <field labelOnTop="0" name="maxspeed:advisory"/>
+    <field labelOnTop="0" name="maxspeed:lanes"/>
+    <field labelOnTop="0" name="maxspeed:source"/>
+    <field labelOnTop="0" name="maxspeed:type"/>
+    <field labelOnTop="0" name="maxweight"/>
+    <field labelOnTop="0" name="maxwidth"/>
+    <field labelOnTop="0" name="mooring"/>
+    <field labelOnTop="0" name="moped"/>
+    <field labelOnTop="0" name="motor_vehicle"/>
+    <field labelOnTop="0" name="motorboat"/>
+    <field labelOnTop="0" name="motorcar"/>
+    <field labelOnTop="0" name="motorcycle"/>
+    <field labelOnTop="0" name="motorroad"/>
+    <field labelOnTop="0" name="mtb"/>
+    <field labelOnTop="0" name="mtb:scale"/>
+    <field labelOnTop="0" name="mtb:scale:imba"/>
+    <field labelOnTop="0" name="mtb:scale:uphill"/>
+    <field labelOnTop="0" name="mtb:type"/>
+    <field labelOnTop="0" name="name"/>
+    <field labelOnTop="0" name="name:de"/>
+    <field labelOnTop="0" name="name:eml"/>
+    <field labelOnTop="0" name="name:etymology:wikidata"/>
+    <field labelOnTop="0" name="name:it"/>
+    <field labelOnTop="0" name="name:language"/>
+    <field labelOnTop="0" name="name:left"/>
+    <field labelOnTop="0" name="name:loc"/>
+    <field labelOnTop="0" name="name:right"/>
+    <field labelOnTop="0" name="narrow"/>
+    <field labelOnTop="0" name="nat_name"/>
+    <field labelOnTop="0" name="nat_ref"/>
+    <field labelOnTop="0" name="natural"/>
+    <field labelOnTop="0" name="network"/>
+    <field labelOnTop="0" name="noexit"/>
+    <field labelOnTop="0" name="noname"/>
+    <field labelOnTop="0" name="note:source"/>
+    <field labelOnTop="0" name="obstacle"/>
+    <field labelOnTop="0" name="obstacle:wheelchair"/>
+    <field labelOnTop="0" name="odbl"/>
+    <field labelOnTop="0" name="old_name"/>
+    <field labelOnTop="0" name="old_ref"/>
+    <field labelOnTop="0" name="oneway"/>
+    <field labelOnTop="0" name="oneway:bicycle"/>
+    <field labelOnTop="0" name="oneway:bus"/>
+    <field labelOnTop="0" name="oneway:conditional"/>
+    <field labelOnTop="0" name="oneway:destination"/>
+    <field labelOnTop="0" name="oneway:emergency"/>
+    <field labelOnTop="0" name="oneway:foot"/>
+    <field labelOnTop="0" name="oneway:hour_off"/>
+    <field labelOnTop="0" name="oneway:hour_on"/>
+    <field labelOnTop="0" name="oneway:moped"/>
+    <field labelOnTop="0" name="oneway:motorcycle"/>
+    <field labelOnTop="0" name="oneway:psv"/>
+    <field labelOnTop="0" name="opening_hours"/>
+    <field labelOnTop="0" name="operator"/>
+    <field labelOnTop="0" name="osm_id"/>
+    <field labelOnTop="0" name="osm_type"/>
+    <field labelOnTop="0" name="other_tags"/>
+    <field labelOnTop="0" name="parking:condition:both"/>
+    <field labelOnTop="0" name="parking:condition:left"/>
+    <field labelOnTop="0" name="parking:lane:both"/>
+    <field labelOnTop="0" name="parking:lane:left"/>
+    <field labelOnTop="0" name="parking:lane:right"/>
+    <field labelOnTop="0" name="parking:lane:right:capacity"/>
+    <field labelOnTop="0" name="passenger_lines"/>
+    <field labelOnTop="0" name="passing_places"/>
+    <field labelOnTop="0" name="path"/>
+    <field labelOnTop="0" name="path:left"/>
+    <field labelOnTop="0" name="path:left:bicycle"/>
+    <field labelOnTop="0" name="path:left:foot"/>
+    <field labelOnTop="0" name="path:left:oneway:bicycle=-1"/>
+    <field labelOnTop="0" name="path:left:segregated"/>
+    <field labelOnTop="0" name="path:left:width"/>
+    <field labelOnTop="0" name="power"/>
+    <field labelOnTop="0" name="priority"/>
+    <field labelOnTop="0" name="psv"/>
+    <field labelOnTop="0" name="public_transport"/>
+    <field labelOnTop="0" name="pumping_capacity"/>
+    <field labelOnTop="0" name="railway"/>
+    <field labelOnTop="0" name="ramp"/>
+    <field labelOnTop="0" name="ramp:luggage"/>
+    <field labelOnTop="0" name="ramp:wheelchair"/>
+    <field labelOnTop="0" name="razed:railway"/>
+    <field labelOnTop="0" name="ref"/>
+    <field labelOnTop="0" name="ref:hiking"/>
+    <field labelOnTop="0" name="ref:terna"/>
+    <field labelOnTop="0" name="ref:terna:codice"/>
+    <field labelOnTop="0" name="reg_name"/>
+    <field labelOnTop="0" name="reg_ref"/>
+    <field labelOnTop="0" name="restriction"/>
+    <field labelOnTop="0" name="route_ref"/>
+    <field labelOnTop="0" name="sac_scale"/>
+    <field labelOnTop="0" name="sac_scale_ref"/>
+    <field labelOnTop="0" name="seats"/>
+    <field labelOnTop="0" name="segregated"/>
+    <field labelOnTop="0" name="segregated:left"/>
+    <field labelOnTop="0" name="segregated:right"/>
+    <field labelOnTop="0" name="service"/>
+    <field labelOnTop="0" name="shelter"/>
+    <field labelOnTop="0" name="short_name"/>
+    <field labelOnTop="0" name="short_name:de"/>
+    <field labelOnTop="0" name="short_name:it"/>
+    <field labelOnTop="0" name="shortest_name"/>
+    <field labelOnTop="0" name="sidewalk"/>
+    <field labelOnTop="0" name="sidewalk:left"/>
+    <field labelOnTop="0" name="sidewalk:left:smoothness"/>
+    <field labelOnTop="0" name="sidewalk:right:bicycle"/>
+    <field labelOnTop="0" name="sidewalk:right:smoothness"/>
+    <field labelOnTop="0" name="sidewalk:smoothness"/>
+    <field labelOnTop="0" name="sidewalk:surface"/>
+    <field labelOnTop="0" name="sidewalk:width"/>
+    <field labelOnTop="0" name="ski"/>
+    <field labelOnTop="0" name="smoothness"/>
+    <field labelOnTop="0" name="source:def"/>
+    <field labelOnTop="0" name="source:est_width"/>
+    <field labelOnTop="0" name="source:hgv"/>
+    <field labelOnTop="0" name="source:horse"/>
+    <field labelOnTop="0" name="source:maxheight"/>
+    <field labelOnTop="0" name="source:maxspeed"/>
+    <field labelOnTop="0" name="source:maxweight"/>
+    <field labelOnTop="0" name="source:maxwidth"/>
+    <field labelOnTop="0" name="source:name"/>
+    <field labelOnTop="0" name="source:oneway"/>
+    <field labelOnTop="0" name="source:position"/>
+    <field labelOnTop="0" name="source:shape"/>
+    <field labelOnTop="0" name="source:vehicle"/>
+    <field labelOnTop="0" name="source:width"/>
+    <field labelOnTop="0" name="sport"/>
+    <field labelOnTop="0" name="start_date"/>
+    <field labelOnTop="0" name="step.condition"/>
+    <field labelOnTop="0" name="step.height"/>
+    <field labelOnTop="0" name="step_count"/>
+    <field labelOnTop="0" name="substance"/>
+    <field labelOnTop="0" name="substation"/>
+    <field labelOnTop="0" name="surface"/>
+    <field labelOnTop="0" name="surface.material"/>
+    <field labelOnTop="0" name="surface:colour"/>
+    <field labelOnTop="0" name="tactile_paving"/>
+    <field labelOnTop="0" name="taxi"/>
+    <field labelOnTop="0" name="temporary:access"/>
+    <field labelOnTop="0" name="temporary:date_off"/>
+    <field labelOnTop="0" name="toll"/>
+    <field labelOnTop="0" name="tourism"/>
+    <field labelOnTop="0" name="tourist_bus"/>
+    <field labelOnTop="0" name="tower:type"/>
+    <field labelOnTop="0" name="track:width"/>
+    <field labelOnTop="0" name="tracks"/>
+    <field labelOnTop="0" name="tracktype"/>
+    <field labelOnTop="0" name="traffic"/>
+    <field labelOnTop="0" name="traffic_calming"/>
+    <field labelOnTop="0" name="traffic_signals:sound"/>
+    <field labelOnTop="0" name="trail_visibility"/>
+    <field labelOnTop="0" name="tram"/>
+    <field labelOnTop="0" name="transit:lanes"/>
+    <field labelOnTop="0" name="trolley_wire"/>
+    <field labelOnTop="0" name="trolley_wire:both"/>
+    <field labelOnTop="0" name="trolley_wire:forward"/>
+    <field labelOnTop="0" name="tunnel"/>
+    <field labelOnTop="0" name="turn:lanes"/>
+    <field labelOnTop="0" name="turn:lanes:forward"/>
+    <field labelOnTop="0" name="two_sided"/>
+    <field labelOnTop="0" name="type"/>
+    <field labelOnTop="0" name="usage"/>
+    <field labelOnTop="0" name="vehicle"/>
+    <field labelOnTop="0" name="vehicles"/>
+    <field labelOnTop="0" name="visibility"/>
+    <field labelOnTop="0" name="voltage"/>
+    <field labelOnTop="0" name="wall"/>
+    <field labelOnTop="0" name="waterway"/>
+    <field labelOnTop="0" name="wheelchair"/>
+    <field labelOnTop="0" name="wheelchair:description:en"/>
+    <field labelOnTop="0" name="wheelchair:description:it"/>
+    <field labelOnTop="0" name="whitewater:section_grade"/>
+    <field labelOnTop="0" name="width"/>
+    <field labelOnTop="0" name="width:sidewalk"/>
+    <field labelOnTop="0" name="wikidata"/>
+    <field labelOnTop="0" name="wikipedia"/>
+    <field labelOnTop="0" name="wires"/>
+    <field labelOnTop="0" name="z_order"/>
   </labelOnTop>
   <widgets/>
   <conditionalstyles>
